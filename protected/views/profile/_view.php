@@ -42,9 +42,7 @@
 	<?php echo CHtml::encode($data->zipcode); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('birthdate')); ?>:</b>
-	<?php echo CHtml::encode($data->birthdate); ?>
-	<br />
+	
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('picture')); ?>:</b>
 	<?php echo CHtml::encode($data->picture); ?>

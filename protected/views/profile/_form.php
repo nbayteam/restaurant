@@ -9,7 +9,9 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'profile-form',
 	'enableAjaxValidation'=>false,
-	'htmlOptions'=>array('enctype'=>'multipart/form-data',),
+	'htmlOptions'=>array(
+		'enctype'=>'multipart/form-data',
+		),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -18,7 +20,24 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'picture'); ?>
+		<?php if($model->isNewRecord != '1'){ 
+			if($model->picture != '') {
+		?>
+		<div class="row">
+		     <?php echo CHtml::image(Yii::app()->params['imagePath'] . $model->id . '/' . $model->picture, "picture", array("width"=>400)); ?> 
+		</div>
+		<?php 
+			} else {
+		?>
+		<div class="row">
+		     <?php echo CHtml::image('images/default.jpg', "picture", array("width"=>215)); ?> 
+		</div>
+		<?php
+			}
+		} 
+		?>
 		<?php echo CHtml::activeFileField($model, 'picture'); ?>
+		<?php echo $form->error($model,'picture'); ?>
 	</div>
 
 	<div class="row">

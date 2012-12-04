@@ -282,6 +282,7 @@ class Profile extends CActiveRecord
 			array('gender', 'length', 'max'=>6),
 			array('picture', 'file', 
 				'types'=>'jpg, gif, png',	// File type: jpg, gif, png
+				'allowEmpty'=>true,
 				'maxSize'=>1024*1024*2),	// Maximum size: 2MB
 			array('address, picture, gplus, facebook, twitter', 'length', 'max'=>255),
 			array('zipcode', 'length', 'max'=>6),
@@ -363,18 +364,18 @@ class Profile extends CActiveRecord
 	protected function afterFind()
 	{
 		
-		list($y, $m, $d) = explode('-', $this->birthdate);
-		$mk = mktime(0, 0, 0, $m, $d, $y);
-		$this->birthdate = date('d-m-Y', $mk);
+		// list($y, $m, $d) = explode('-', $this->birthdate);
+		// $mk = mktime(0, 0, 0, $m, $d, $y);
+		// $this->birthdate = date('d-m-Y', $mk);
 
 		return parent::afterFind();
 	}
 
 	protected function beforeSave()
 	{
-		list($d, $m, $y) = explode('-', $this->birthdate);
-		$mk = mktime(0, 0, 0, $m, $d, $y);
-		$this->birthdate = date('Y-m-d', $mk);
+		// list($d, $m, $y) = explode('-', $this->birthdate);
+		// $mk = mktime(0, 0, 0, $m, $d, $y);
+		// $this->birthdate = date('Y-m-d', $mk);
 
 		return parent::beforeSave();
 	}

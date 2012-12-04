@@ -39,6 +39,11 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+		'file'=>array(
+			'class'=>'application.extensions.file.CFile',
+		),
+
+
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -90,6 +95,6 @@ return array(
 		// this is used in contact page
 		'adminEmail' =>'webmaster@example.com',
         'divider' => '::',
-        'imagePath' => '/images',
+        'imagePath' => 'images/uploads/',
 	),
 );
