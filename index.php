@@ -1,7 +1,19 @@
 <?php
 
 // change the following paths if necessary
-$yii=dirname(__FILE__).'/../../framework/yii.php';
+$pathinfo = pathinfo(dirname(__FILE__));
+$pathinfo = explode("/", $pathinfo['dirname']);
+$host = '';
+if (count($pathinfo) >= 3) {
+    $host = $pathinfo[2];
+}
+if ($host == "niko") {
+    $yii=dirname(__FILE__).'/../framework/yii.php';
+}
+else{
+    $yii=dirname(__FILE__).'/../../framework/yii.php';
+}
+
 $config=dirname(__FILE__).'/protected/config/main.php';
 
 // remove the following lines when in production mode

@@ -8,6 +8,9 @@
 $yii=dirname(__FILE__).'/../../framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/test.php';
 
+$yii=dirname(__FILE__).'/../../../source/yii-1.1.12.b600af/framework/yii.php';
+$config=dirname(__FILE__).'/protected/config/main.php';
+
 // remove the following line when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG',true);
 
