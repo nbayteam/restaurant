@@ -1815,3 +1815,84 @@ Stack trace:
 REQUEST_URI=/restaurant/index.php?r=profile/update&id=2
 HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=profile/view&id=2
 ---
+2012/12/04 17:16:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'restoadm'@'localhost' (using password: YES)' in /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(624): CApplication->getDb()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Business))
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Business')
+#8 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(136): CActiveDataProvider->__construct('Business')
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): BusinessController->actionIndex()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Users/niko/Documents/yii_project/restaurant/index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/restaurant/
+---
+2012/12/04 17:26:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'restoadm'@'localhost' (using password: YES)' in /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(624): CApplication->getDb()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Business))
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Business')
+#8 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(136): CActiveDataProvider->__construct('Business')
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): BusinessController->actionIndex()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Users/niko/Documents/yii_project/restaurant/index.php(24): CApplication->run()
+#22 {main}
+REQUEST_URI=/restaurant/
+---
+2012/12/04 17:54:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'restoadm'@'localhost' (using password: YES)' in /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(624): CApplication->getDb()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Business))
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Business')
+#8 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(136): CActiveDataProvider->__construct('Business')
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): BusinessController->actionIndex()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Users/niko/Documents/yii_project/restaurant/index.php(25): CApplication->run()
+#22 {main}
+REQUEST_URI=/restaurant/
+---
