@@ -5,10 +5,21 @@
  */
 
 // change the following paths if necessary
-$yii=dirname(__FILE__).'/../../framework/yii.php';
-$config=dirname(__FILE__).'/protected/config/test.php';
+$pathinfo = pathinfo(dirname(__FILE__));
+$pathinfo = explode("/", $pathinfo['dirname']);
+$host = '';
+if (count($pathinfo) >= 3) {
+    $host = $pathinfo[2];
+}
+if ($host == "niko") {
+    // niko settings
+    $yii=dirname(__FILE__).'/../../../source/yii-1.1.12.b600af/framework/yii.php';
+}
+else{
+    // yuyu settings
+    $yii=dirname(__FILE__).'/../../framework/yii.php';
+}
 
-$yii=dirname(__FILE__).'/../../../source/yii-1.1.12.b600af/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
 
 // remove the following line when in production mode

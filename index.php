@@ -8,9 +8,11 @@ if (count($pathinfo) >= 3) {
     $host = $pathinfo[2];
 }
 if ($host == "niko") {
-    $yii=dirname(__FILE__).'/../framework/yii.php';
+    // niko settings
+    $yii=dirname(__FILE__).'/../../../source/yii-1.1.12.b600af/framework/yii.php';
 }
 else{
+    // yuyu settings
     $yii=dirname(__FILE__).'/../../framework/yii.php';
 }
 
