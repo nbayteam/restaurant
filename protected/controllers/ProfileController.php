@@ -82,7 +82,7 @@ class ProfileController extends Controller
 				//$this->uploadPhoto($model, $uploadedFile);
 				//$model->picture->saveAs('images/uploads');
 				
-				//$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('view','id'=>$model->id));
 			}
 		}
 
@@ -105,43 +105,51 @@ class ProfileController extends Controller
 
 		if(isset($_POST['Profile']))
 		{
+			$oldfilename = $model->picture;	// Store original filename
 			$model->attributes=$_POST['Profile'];
-
-			$rnd = rand(0,9999);	// generate random number between 0-9999
 
 			// Get selected image
 			// Standardize extension and encrypt filename
 			$uploadedFile = CUploadedFile::getInstance($model, 'picture');
-			$extension = strtolower($uploadedFile->getExtensionName());
-			$filename = md5(date('YmdHis') . $id) . "." . $extension;	// random number + filename
-			$model->picture = $filename;
 
-			// Check if profile image is set
-			$currentProfile = Profile::model()->findByPk($id);
-			$currentProfilePic = $currentProfile->picture;
-			if(!is_null($currentProfilePic)) {
-				@unlink(Yii::app()->params['imagePath'] . $id . '/' . $currentProfilePic);
-				@unlink(Yii::app()->params['imagePath'] . $id . '/sm-' . $currentProfilePic);	
+			// Check if there's new image uploaded
+			// Store new image and delete old image if there is
+			if(is_object($uploadedFile) && get_class($uploadedFile) == 'CUploadedFile') {
+
+				$extension = strtolower($uploadedFile->getExtensionName());
+				$filename = md5(date('YmdHis') . $id) . "." . $extension;	// random number + filename
+				$model->picture = $filename;
+
+				// Check if original profile image is set
+				if(!is_null($oldfilename)) {
+					@unlink(Yii::app()->params['imagePath'] . $id . '/' . $oldfilename);
+					@unlink(Yii::app()->params['imagePath'] . $id . '/sm-' . $oldfilename);	
+				}
+			} else {
+				$model->picture = $oldfilename;
 			}
 
 			if($model->save()) {
-				// Prepare upload directory
-				$uploadDirectoryPath = 'images/uploads/' . $id;
-				$uploadDirectory = Yii::app()->file->set($uploadDirectoryPath)->isdir;
-				
-				// Create directory if it doesn't exist
-				if(!$uploadDirectory) {
-					Yii::app()->file->createDir(0754, $uploadDirectoryPath);
-				}
+				if(is_object($uploadedFile) && get_class($uploadedFile) == 'CUploadedFile') {
 
-				Yii::import('application.vendors.wideImage.lib.WideImage');
-				$uploadedFile->saveAs(Yii::app()->params['imagePath'] . $id .'/' . $filename);
-				if($extension == "jpeg" || $extension == "gif" || $extension == "jpg"){
-					WideImage::load(Yii::app()->params['imagePath'] . $id . '/' . $filename)->resizeDown(600, 600, 'outside')->saveToFile(Yii::app()->params['imagePath'] . $id . '/' . $filename, 80);
-					WideImage::load(Yii::app()->params['imagePath'] . $id . '/' . $filename)->resizeDown(200, 200, 'outside')->saveToFile(Yii::app()->params['imagePath'] . $id . '/sm-' . $filename, 80);
-				} else if ($extension == "png") {
-					WideImage::load(Yii::app()->params['imagePath'] . $id . '/' . $filename)->resizeDown(600, 600, 'outside')->saveToFile(Yii::app()->params['imagePath'] . $id . '/' . $filename, 9);
-					WideImage::load(Yii::app()->params['imagePath'] . $id . '/' . $filename)->resizeDown(200, 200, 'outside')->saveToFile(Yii::app()->params['imagePath'] . $id . '/sm-' . $filename, 9);
+					// Prepare upload directory
+					$uploadDirectoryPath = 'images/uploads/' . $id;
+					$uploadDirectory = Yii::app()->file->set($uploadDirectoryPath)->isdir;
+					
+					// Create directory if it doesn't exist
+					if(!$uploadDirectory) {
+						Yii::app()->file->createDir(0754, $uploadDirectoryPath);
+					}
+
+					Yii::import('application.vendors.wideImage.lib.WideImage');
+					$uploadedFile->saveAs(Yii::app()->params['imagePath'] . $id .'/' . $filename);
+					if($extension == "jpeg" || $extension == "gif" || $extension == "jpg"){
+						WideImage::load(Yii::app()->params['imagePath'] . $id . '/' . $filename)->resizeDown(600, 600, 'outside')->saveToFile(Yii::app()->params['imagePath'] . $id . '/' . $filename, 80);
+						WideImage::load(Yii::app()->params['imagePath'] . $id . '/' . $filename)->resizeDown(200, 200, 'outside')->saveToFile(Yii::app()->params['imagePath'] . $id . '/sm-' . $filename, 80);
+					} else if ($extension == "png") {
+						WideImage::load(Yii::app()->params['imagePath'] . $id . '/' . $filename)->resizeDown(600, 600, 'outside')->saveToFile(Yii::app()->params['imagePath'] . $id . '/' . $filename, 9);
+						WideImage::load(Yii::app()->params['imagePath'] . $id . '/' . $filename)->resizeDown(200, 200, 'outside')->saveToFile(Yii::app()->params['imagePath'] . $id . '/sm-' . $filename, 9);
+					}
 				}
 
 				$this->redirect(array('view','id'=>$model->id));
@@ -271,29 +279,5 @@ class ProfileController extends Controller
             return $this->_user;
         }
 
-        /**
-        * Upload and crunch an image
-        */
-        public function updatePhoto($model, $selectedPhoto)
-        {
-        	if(is_object($selectedPhoto) && get_class($selectedPhoto) == 'CUploadedFile')
-        	{
-        		$extension = $model->image->getExtensionName();
-
-        		// Generate a filename for the uploaded image based on a random number
-        		// but check that the random number has not already been used
-        		if($model->picture == '' or is_null($model->picture))
-        		{
-        			$n = 1;
-        			// loop until random number is unique - which it probably is first time
-        			while($n > 0) {
-        				$random = dechex(rand()%99999999);
-        				$picture = $model->property->ref . '_' . $random . '.' . $extension;
-        				$n = Profile::model()->count('picture=:picture', array('picture'=>$picture));
-        			}
-        			$model->picture = $picture;
-        		}
-        	}
-        }
 
 }
