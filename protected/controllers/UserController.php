@@ -63,7 +63,7 @@ class UserController extends Controller
 	public function actionCreate()
 	{
 		$user=new User;
-                $profile = new Profile;
+        $profile = new Profile;
 
 		// Uncomment the following line if AJAX validation is needed
 		$this->performAjaxValidation(array($user, $profile));
@@ -214,7 +214,8 @@ class UserController extends Controller
                     $form->attributes = $_POST['ResetPasswordForm'];
                     if($form->validate())
                     {
-                        $user->password = $user->encrypt($form->password);
+                        //$user->password = $user->encrypt($form->password);
+                        $user->password = $form->password;
                         $user->user_key = NULL;
                         $user->save(false);
                         Yii::app()->user->setFlash('resetSuccess', 'Password has been reset');

@@ -118,12 +118,14 @@ class User extends CActiveRecord
     /**
      * perform one-way encryption on the password before we store it in database
      */
-    protected function afterValidate() {
-        parent::afterValidate();
+    protected function beforeSave() {
+    	//$password = $this->encrypt($this->password);
         $this->password = $this->encrypt($this->password);
         $this->user_type = 1;
+
+        return parent::beforeSave();
     }
-    
+
     public function encrypt($value)
     {
         return md5($value);

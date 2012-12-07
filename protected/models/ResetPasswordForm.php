@@ -45,7 +45,7 @@ class ResetPasswordForm extends CFormModel
 	{
 		return array(
 			'password' => 'Password',
-                        'password_repeat' => 'Confirm Password',
+            'password_repeat' => 'Confirm Password',
 		);
 	}
     

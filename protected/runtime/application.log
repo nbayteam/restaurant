@@ -1896,3 +1896,41 @@ Stack trace:
 #22 {main}
 REQUEST_URI=/restaurant/
 ---
+2012/12/06 09:49:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Applications/MAMP/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/framework/web/CController.php(292): CFilterChain->run()
+#6 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('business/admin')
+#9 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#11 {main}
+REQUEST_URI=/restaurant/index.php?r=business/admin
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=business
+---
+2012/12/07 03:35:44 [error] [exception.CException] exception 'CException' with message 'ResetPasswordForm and its behaviors do not have a method or closure named "save".' in /Applications/MAMP/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/restaurant/protected/controllers/UserController.php(217): CComponent->__call('save', Array)
+#1 /Applications/MAMP/htdocs/restaurant/protected/controllers/UserController.php(217): ResetPasswordForm->save()
+#2 /Applications/MAMP/framework/web/actions/CInlineAction.php(50): UserController->actionresetPassword()
+#3 /Applications/MAMP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Applications/MAMP/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Applications/MAMP/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/MAMP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/MAMP/framework/web/CController.php(292): CFilterChain->run()
+#10 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('resetpassword')
+#12 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('user/resetpassw...')
+#13 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#15 {main}
+REQUEST_URI=/restaurant/index.php?r=user/resetpassword&forgot_key=1234
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=user/resetpassword&forgot_key=1234
+---

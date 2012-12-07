@@ -39,12 +39,11 @@ class BusinessType extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('type, description', 'required'),
-			array('type', 'numerical', 'integerOnly'=>true),
-			array('description', 'length', 'max'=>45),
+			array('name', 'required'),
+			array('name', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, type, description', 'safe', 'on'=>'search'),
+			array('id, name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,8 +66,7 @@ class BusinessType extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'type' => 'Type',
-			'description' => 'Description',
+			'name' => 'Name',
 		);
 	}
 
@@ -84,8 +82,7 @@ class BusinessType extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('type',$this->type);
-		$criteria->compare('description',$this->description,true);
+		$criteria->compare('name',$this->name, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

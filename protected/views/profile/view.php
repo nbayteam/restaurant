@@ -23,6 +23,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'first_name',
 		'last_name',
+		'picture',
 		'email',
 		'countrycode',
 		'phone',
@@ -30,7 +31,6 @@ $this->menu=array(
 		'address',
 		'zipcode',
 		'birthdate',
-		'picture',
 		'gplus',
 		'facebook',
 		'twitter',
