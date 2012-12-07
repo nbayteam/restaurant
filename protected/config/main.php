@@ -10,7 +10,10 @@ return array(
 	'name'=>'My Web Application',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array(
+		'log',
+		'bootstrap',	// preload the bootstrap component
+	),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -29,6 +32,9 @@ return array(
 			'password'=>'restaurant2012',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
+			'generatorPaths'=>array(
+				'bootstrap.gii',
+			),
 		),
 		
 	),
@@ -41,6 +47,9 @@ return array(
 		),
 		'file'=>array(
 			'class'=>'application.extensions.file.CFile',
+		),
+		'bootstrap'=>array(
+			'class'=>'ext.bootstrap.components.Bootstrap',
 		),
 
 

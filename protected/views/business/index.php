@@ -14,7 +14,8 @@ $this->menu=array(
 
 <h1>Businesses</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+<?php $this->widget('bootstrap.widgets.TbListView', array(
+   'dataProvider'=>$dataProvider,
+   'itemView'=>'_view',
+   'pagerCssClass'=>'pagination pagination-centered pagination-small',
 )); ?>
