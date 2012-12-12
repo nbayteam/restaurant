@@ -47,19 +47,19 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'price'); ?>
-		<?php echo $form->textField($model,'price',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->dropDownList($model,'price', CHtml::listData(PriceType::model()->findAll(), 'id', 'name'), array('empty'=>'Select a type')); ?>
 		<?php echo $form->error($model,'price'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'category'); ?>
-		<?php echo $form->textField($model,'category',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->dropDownList($model,'category', CHtml::listData(CategoryType::model()->findAll(), 'id', 'name'), array('empty'=>'Select a category')); ?>
 		<?php echo $form->error($model,'category'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'cuisine'); ?>
-		<?php echo $form->textField($model,'cuisine',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->dropDownList($model,'cuisine', CHtml::listData(CuisineType::model()->findAll(), 'id', 'name'), array('empty'=>'Select a cuisine type')); ?>
 		<?php echo $form->error($model,'cuisine'); ?>
 	</div>
 
@@ -77,13 +77,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'attire'); ?>
-		<?php echo $form->textField($model,'attire',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->dropDownList($model,'attire', CHtml::listData(AttireType::model()->findAll(), 'id', 'name'), array('empty'=>'Select an attire type')); ?>
 		<?php echo $form->error($model,'attire'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ambience'); ?>
-		<?php echo $form->textField($model,'ambience',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->dropDownList($model,'ambience', CHtml::listData(AmbienceType::model()->findAll(), 'id', 'name'), array('empty'=>'Select an ambience type')); ?>
 		<?php echo $form->error($model,'ambience'); ?>
 	</div>
 
