@@ -31,7 +31,13 @@ $this->menu = array(
         <?php echo $form->error($model, 'username'); ?>
     </div>
     <div class="row buttons">
-        <?php echo CHtml::submitButton('Submit Email'); ?>
+        <?php //echo CHtml::submitButton('Submit Email'); ?>
+        <?php $this->widget('bootstrap.widgets.TbButton', array(
+            'buttonType'=>'submit',
+            'label'=>'Submit Email',
+            'type'=>null, // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+            'size'=>null, // null, 'large', 'small' or 'mini'
+        )); ?>
     </div>
 <?php $this->endWidget(); ?>
 </div>

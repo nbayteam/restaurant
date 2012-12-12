@@ -20,21 +20,21 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'picture'); ?>
-		<?php if($model->isNewRecord != '1'){ 
+		<?php if($model->isNewRecord != '1'){
 			if($model->picture != '') {
 		?>
 		<div class="row">
-		     <?php echo CHtml::image(Yii::app()->params['imagePath'] . $model->id . '/' . $model->picture, "picture", array("width"=>400)); ?> 
+		     <?php echo CHtml::image(Yii::app()->params['imagePath'] . $model->id . '/' . $model->picture, "picture", array("width"=>400)); ?>
 		</div>
-		<?php 
+		<?php
 			} else {
 		?>
 		<div class="row">
-		     <?php echo CHtml::image('images/default.jpg', "picture", array("width"=>215)); ?> 
+		     <?php echo CHtml::image('images/default.jpg', "picture", array("width"=>215)); ?>
 		</div>
 		<?php
 			}
-		} 
+		}
 		?>
 		<?php echo CHtml::activeFileField($model, 'picture'); ?>
 		<?php echo $form->error($model,'picture'); ?>
@@ -85,7 +85,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'birthdate'); ?>
-		<?php 
+		<?php
 
 			$this->widget('zii.widgets.jui.CJuiDatePicker', array(
 				'model'=>$model,
@@ -103,11 +103,11 @@
 				),
 				'htmlOptions'=>array(
 				'style'=>'height:20px;'
-				),		
+				),
 			));
 
-		?>	
-      
+		?>
+
 		<?php echo $form->error($model,'birthdate'); ?>
 	</div>
 
@@ -130,7 +130,13 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+        <?php $this->widget('bootstrap.widgets.TbButton', array(
+            'buttonType'=>'submit',
+            'label'=>$model->isNewRecord ? 'Create' : 'Save',
+            'type'=>null, // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+            'size'=>null, // null, 'large', 'small' or 'mini'
+        )); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
