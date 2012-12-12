@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
+<div class="form    ">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'business-form',
@@ -17,13 +17,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'name',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textArea($model,'description',array('rows'=>7, 'cols'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textArea($model,'description',array('class'=>'input-xxlarge','rows'=>7, 'cols'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 
@@ -35,13 +35,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'address'); ?>
-		<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'address',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'address'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'phone'); ?>
-		<?php echo $form->textField($model,'phone',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'phone',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'phone'); ?>
 	</div>
 
@@ -65,13 +65,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'opening_hours'); ?>
-		<?php echo $form->textField($model,'opening_hours',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'opening_hours',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'opening_hours'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'payment'); ?>
-		<?php echo $form->textField($model,'payment',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'payment',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'payment'); ?>
 	</div>
 
@@ -89,49 +89,49 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'groups_option'); ?>
-		<?php echo $form->textField($model,'groups_option',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'groups_option',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'groups_option'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'kids_option'); ?>
-		<?php echo $form->textField($model,'kids_option',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'kids_option',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'kids_option'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'website'); ?>
-		<?php echo $form->textField($model,'website',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'website',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'website'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'menu'); ?>
-		<?php echo $form->textField($model,'menu',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'menu',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'menu'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'facebook'); ?>
-		<?php echo $form->textField($model,'facebook',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'facebook',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'facebook'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'twitter'); ?>
-		<?php echo $form->textField($model,'twitter',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'twitter',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'twitter'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'geolocation'); ?>
-		<?php echo $form->textField($model,'geolocation',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->textField($model,'geolocation',array('class'=>'input-xxlarge','size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'geolocation'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'rating'); ?>
-		<?php echo $form->textField($model,'rating'); ?>
+		<?php echo $form->textField($model,'rating',array('class'=>'input-xxlarge','size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'rating'); ?>
 	</div>
 
