@@ -26,18 +26,36 @@ $this->menu=array(
 		'id',
 		'name',
 		'description',
-		'type',
+		array(
+			'name'=>'type',
+			'value'=>CHtml::encode($model->getTypeText())
+		),
 		'picture',
 		'address',
 		'phone',
 		'geolocation',
-		'price',
-		'category',
-		'cuisine',
+		array(
+			'name'=>'price',
+			'value'=>CHtml::encode($model->getPriceText())
+		),
+		array(
+			'name'=>'category',
+			'value'=>CHtml::encode($model->getCategoryText())
+		),
+		array(
+			'name'=>'cuisine',
+			'value'=>CHtml::encode($model->getCuisineText())
+		),
 		'opening_hours',
 		'payment',
-		'attire',
-		'ambience',
+		array(
+			'name'=>'attire',
+			'value'=>CHtml::encode($model->getAttireText())
+		),
+		array(
+			'name'=>'ambience',
+			'value'=>CHtml::encode($model->getAmbienceText())
+		),
 		'groups_option',
 		'kids_option',
 		'website',

@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form    ">
+<div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'business-form',
@@ -89,13 +89,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'groups_option'); ?>
-		<?php echo $form->textField($model,'groups_option',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->dropDownList($model,'groups_option', array('empty'=>'Select one', 'Yes'=>'Yes', 'No'=>'No')); ?>  
 		<?php echo $form->error($model,'groups_option'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'kids_option'); ?>
-		<?php echo $form->textField($model,'kids_option',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->dropDownList($model,'kids_option', array('empty'=>'Select one', 'Yes'=>'Yes', 'No'=>'No')); ?>  
 		<?php echo $form->error($model,'kids_option'); ?>
 	</div>
 

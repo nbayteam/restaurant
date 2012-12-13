@@ -609,4 +609,12 @@ class Profile extends CActiveRecord
 			self::COUNTRY_ZW =>'Zimbabwe (+263)',
 		);
 	}
+
+	/**
+	* @return string the country code text display for the current business
+	*/
+	public function getCountryCodeText() {
+		$countryCodeOptions = $this->countryCodeOptions;
+		return isset($countryCodeOptions[$this->countrycode]) ? '+(' . $this->countrycode . ') ' : "unknown status ({$this->countrycode})";
+	}
 }

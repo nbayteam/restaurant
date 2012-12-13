@@ -25,8 +25,10 @@ $this->menu=array(
 		'last_name',
 		'picture',
 		'email',
-		'countrycode',
-		'phone',
+		array(
+			'name'=>'phone',
+			'value'=> $model->getCountryCodeText() . $model->phone,
+		),
 		'gender',
 		'address',
 		'zipcode',

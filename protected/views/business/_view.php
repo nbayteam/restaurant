@@ -14,7 +14,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
-	<?php echo CHtml::encode($data->type); ?>
+	<?php echo CHtml::encode($data->getTypeText()); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('address')); ?>:</b>

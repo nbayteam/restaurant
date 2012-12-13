@@ -195,4 +195,58 @@ class Business extends CActiveRecord
 
 		return parent::beforeValidate();
 	}
+
+	/**
+	* @return string the type text display for the current business
+	*/
+	public function getTypeText()
+	{
+		$typeOptions = CHtml::listData(BusinessType::model()->findAll(), 'id', 'name');
+		return isset($typeOptions[$this->type]) ? $typeOptions[$this->type] : "unknown status ({$this->type})";
+	}
+
+	/**
+	* @return string the price text display for the current business
+	*/
+	public function getPriceText()
+	{
+		$priceOptions = CHtml::listData(PriceType::model()->findAll(), 'id', 'name');
+		return isset($priceOptions[$this->price]) ? $priceOptions[$this->price] : "unknown status ({$this->price})";
+	}
+
+	/**
+	* @return string the category text display for the current business
+	*/
+	public function getCategoryText()
+	{
+		$categoryOptions = CHtml::listData(CategoryType::model()->findAll(), 'id', 'name');
+		return isset($categoryOptions[$this->category]) ? $categoryOptions[$this->category] : "unknown status ({$this->category})";
+	}
+
+	/**
+	* @return string the cuisine text display for the current business
+	*/
+	public function getCuisineText()
+	{
+		$cuisineOptions = CHtml::listData(CuisineType::model()->findAll(), 'id', 'name');
+		return isset($cuisineOptions[$this->cuisine]) ? $cuisineOptions[$this->cuisine] : "unknown status ({$this->cuisine})";
+	}
+
+	/**
+	* @return string the attire text display for the current business
+	*/
+	public function getAttireText()
+	{
+		$attireOptions = CHtml::listData(AttireType::model()->findAll(), 'id', 'name');
+		return isset($attireOptions[$this->attire]) ? $attireOptions[$this->attire] : "unknown status ({$this->attire})";
+	}
+
+	/**
+	* @return string the ambience text display for the current business
+	*/
+	public function getAmbienceText()
+	{
+		$ambienceOptions = CHtml::listData(AmbienceType::model()->findAll(), 'id', 'name');
+		return isset($ambienceOptions[$this->ambience]) ? $ambienceOptions[$this->ambience] : "unknown status ({$this->ambience})";
+	}
 }
