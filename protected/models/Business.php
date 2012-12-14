@@ -10,6 +10,7 @@
  * @property integer $type
  * @property string $picture
  * @property string $address
+ * @property string $zipcode
  * @property string $phone
  * @property string $geolocation
  * @property integer $price
@@ -73,13 +74,14 @@ class Business extends CActiveRecord
 			array('name, google_id', 'length', 'max'=>100),
 			array('description, picture, address', 'length', 'max'=>255),
 			array('phone', 'length', 'max'=>10),
+			array('zipcode', 'length', 'max'=>6),
 			array('geolocation, payment, website, menu, facebook, twitter', 'length', 'max'=>50),
 			array('opening_hours', 'length', 'max'=>83),
 			array('groups_option, kids_option', 'length', 'max'=>3),
 			array('description', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, description, type, picture, address, phone, geolocation, price, category, cuisine, opening_hours, payment, attire, ambience, groups_option, kids_option, website, menu, facebook, twitter, rating, google_id, update_date, create_date', 'safe', 'on'=>'search'),
+			array('id, name, description, type, picture, address, zipcode, phone, geolocation, price, category, cuisine, opening_hours, payment, attire, ambience, groups_option, kids_option, website, menu, facebook, twitter, rating, google_id, update_date, create_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -98,7 +100,7 @@ class Business extends CActiveRecord
 			'attire' => array(self::BELONGS_TO, 'AttireType', 'attire'),
 			'ambience' => array(self::BELONGS_TO, 'AmbienceType', 'ambience'),
 			'reviews' => array(self::HAS_MANY, 'Review', 'business_id',
-				'order'=>'reviews.date_added DESC'),
+			'order'=>'reviews.date_added DESC'),
 			'reviewCount' => array(self::STAT, 'Review', 'business_id'),
 		);
 	}
@@ -115,6 +117,7 @@ class Business extends CActiveRecord
 			'type' => 'Type',
 			'picture' => 'Picture',
 			'address' => 'Address',
+			'zipcode' => 'Zipcode',
 			'phone' => 'Phone',
 			'geolocation' => 'Geolocation',
 			'price' => 'Price',
@@ -154,6 +157,7 @@ class Business extends CActiveRecord
 		$criteria->compare('type',$this->type);
 		$criteria->compare('picture',$this->picture,true);
 		$criteria->compare('address',$this->address,true);
+		$criteria->compare('zipcode',$this->zipcode,true);
 		$criteria->compare('phone',$this->phone,true);
 		$criteria->compare('geolocation',$this->geolocation,true);
 		$criteria->compare('price',$this->price);

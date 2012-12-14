@@ -32,6 +32,7 @@ $this->menu=array(
 		),
 		'picture',
 		'address',
+		'zipcode',
 		'phone',
 		'geolocation',
 		array(

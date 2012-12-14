@@ -40,8 +40,14 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'zipcode'); ?>
+		<?php echo $form->textField($model,'zipcode',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>6)); ?>
+		<?php echo $form->error($model,'zipcode'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'phone'); ?>
-		<?php echo $form->textField($model,'phone',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'phone',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>8)); ?>
 		<?php echo $form->error($model,'phone'); ?>
 	</div>
 

@@ -21,6 +21,10 @@
 	<?php echo CHtml::encode($data->address); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('zipcode')); ?>:</b>
+	<?php echo CHtml::encode($data->zipcode); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('geolocation')); ?>:</b>
 	<?php echo CHtml::encode($data->geolocation); ?>
 	<br />
