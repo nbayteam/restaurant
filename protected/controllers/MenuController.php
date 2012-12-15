@@ -1,12 +1,16 @@
 <?php
 
-class BusinessController extends Controller
+class MenuController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/column2';
+
+	/**
+      * @var private property containing the associated Business model instance. */
+    private $_business = null;
 
 	/**
 	 * @return array action filters
@@ -16,6 +20,7 @@ class BusinessController extends Controller
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
+			'businessContext + create', // check to ensure valid business context
 		);
 	}
 
@@ -51,19 +56,8 @@ class BusinessController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$reviewDataProvider = new CActiveDataProvider('Review', array(
-			'criteria'=>array(
-				'condition'=>'business_id=:businessId',
-				'params'=>array(':businessId'=>$this->loadModel($id)->id),
-			),
-			'pagination'=>array(
-				'pageSize'=>10,
-			),
-		));
-
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
-			'reviewDataProvider'=>$reviewDataProvider,
 		));
 	}
 
@@ -73,26 +67,23 @@ class BusinessController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Business;
+		$model=new Menu;
 
-		$paymentMethods = array('Cash'=>'Cash', 'Credit Cards'=>'Credit Cards');
+		// pre-fill business id
+		$model->business_id = $this->_business->id;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Business']))
+		if(isset($_POST['Menu']))
 		{
-			$model->attributes=$_POST['Business'];
-			if(is_array($model->payment))
-				$model->payment = implode(', ', $model->payment);
-
+			$model->attributes=$_POST['Menu'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-			'paymentMethods'=>$paymentMethods,
 		));
 	}
 
@@ -105,28 +96,18 @@ class BusinessController extends Controller
 	{
 		$model=$this->loadModel($id);
 
-		$paymentMethods = array('Cash'=>'Cash', 'Credit Cards'=>'Credit Cards');
-		$preSelectedPaymentMethods = explode(', ', $model->payment);
-
-		$model->payment = $preSelectedPaymentMethods;
-
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Business']))
+		if(isset($_POST['Menu']))
 		{
-			$model->attributes=$_POST['Business'];
-
-			if(is_array($model->payment))
-				$model->payment = implode(', ', $model->payment);
-
+			$model->attributes=$_POST['Menu'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
-			'paymentMethods'=>$paymentMethods,
 		));
 	}
 
@@ -149,7 +130,7 @@ class BusinessController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Business');
+		$dataProvider=new CActiveDataProvider('Menu');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -160,10 +141,10 @@ class BusinessController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Business('search');
+		$model=new Menu('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Business']))
-			$model->attributes=$_GET['Business'];
+		if(isset($_GET['Menu']))
+			$model->attributes=$_GET['Menu'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -177,7 +158,7 @@ class BusinessController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Business::model()->findByPk($id);
+		$model=Menu::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -189,10 +170,51 @@ class BusinessController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='business-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='menu-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
+
+	/**
+    * Protected method to load the associated Business model class
+    * @business_id the primary identifier of the associated Business
+    * @return object the Business data model based on the primary key
+    */
+    protected function loadBusiness($business_id)
+    {
+    	//if the project property is null, create it based on input id
+        if($this->_business===null)
+        {
+        	$this->_business=Business::model()->findbyPk($business_id);
+        	if($this->_business===null)
+            {
+            	// Temporary error
+            	// Will redirect to new business creation page
+            	throw new CHttpException(404,'The requested business does not exist.'); 
+            }
+        }
+        return $this->_business;
+    }
+
+    /**
+      * In-class defined filter method, configured for use in the above filters() method
+      * It is called before the actionCreate() action method is run in order to ensure a proper project context
+      */
+	public function filterBusinessContext($filterChain)
+    {
+   		//set the project identifier based on either the GET or POST
+        //request variables, since we allow both types for our actions
+   		$businessId = null;
+   		if(isset($_GET['bid']))
+   			$businessId = $_GET['bid'];
+   		else if(isset($_POST['bid']))
+   			$businessId = $_POST['bid'];
+
+   		$this->loadBusiness($businessId);
+
+   		//complete the running of other filters and execute the requested action
+        $filterChain->run();
+    }
 }

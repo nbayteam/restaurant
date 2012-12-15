@@ -1,6 +1,6 @@
 <?php
 
-class BusinessController extends Controller
+class PhotoController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -51,19 +51,8 @@ class BusinessController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$reviewDataProvider = new CActiveDataProvider('Review', array(
-			'criteria'=>array(
-				'condition'=>'business_id=:businessId',
-				'params'=>array(':businessId'=>$this->loadModel($id)->id),
-			),
-			'pagination'=>array(
-				'pageSize'=>10,
-			),
-		));
-
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
-			'reviewDataProvider'=>$reviewDataProvider,
 		));
 	}
 
@@ -73,26 +62,20 @@ class BusinessController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Business;
-
-		$paymentMethods = array('Cash'=>'Cash', 'Credit Cards'=>'Credit Cards');
+		$model=new Photo;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Business']))
+		if(isset($_POST['Photo']))
 		{
-			$model->attributes=$_POST['Business'];
-			if(is_array($model->payment))
-				$model->payment = implode(', ', $model->payment);
-
+			$model->attributes=$_POST['Photo'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-			'paymentMethods'=>$paymentMethods,
 		));
 	}
 
@@ -105,28 +88,18 @@ class BusinessController extends Controller
 	{
 		$model=$this->loadModel($id);
 
-		$paymentMethods = array('Cash'=>'Cash', 'Credit Cards'=>'Credit Cards');
-		$preSelectedPaymentMethods = explode(', ', $model->payment);
-
-		$model->payment = $preSelectedPaymentMethods;
-
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Business']))
+		if(isset($_POST['Photo']))
 		{
-			$model->attributes=$_POST['Business'];
-
-			if(is_array($model->payment))
-				$model->payment = implode(', ', $model->payment);
-
+			$model->attributes=$_POST['Photo'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
-			'paymentMethods'=>$paymentMethods,
 		));
 	}
 
@@ -149,7 +122,7 @@ class BusinessController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Business');
+		$dataProvider=new CActiveDataProvider('Photo');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -160,10 +133,10 @@ class BusinessController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Business('search');
+		$model=new Photo('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Business']))
-			$model->attributes=$_GET['Business'];
+		if(isset($_GET['Photo']))
+			$model->attributes=$_GET['Photo'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -177,7 +150,7 @@ class BusinessController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Business::model()->findByPk($id);
+		$model=Photo::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -189,7 +162,7 @@ class BusinessController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='business-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='photo-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

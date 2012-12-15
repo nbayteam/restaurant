@@ -68,16 +68,15 @@ class Business extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, type, groups_option, kids_option, update_date, create_date', 'required'),
+			array('name, type, update_date, create_date', 'required'),
 			array('type, price, category, cuisine, attire, ambience', 'numerical', 'integerOnly'=>true),
 			array('rating', 'numerical'),
 			array('name, google_id', 'length', 'max'=>100),
-			array('description, picture, address', 'length', 'max'=>255),
+			array('picture, address', 'length', 'max'=>255),
 			array('phone', 'length', 'max'=>10),
 			array('zipcode', 'length', 'max'=>6),
 			array('geolocation, payment, website, menu, facebook, twitter', 'length', 'max'=>50),
 			array('opening_hours', 'length', 'max'=>83),
-			array('groups_option, kids_option', 'length', 'max'=>3),
 			array('description', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -206,7 +205,7 @@ class Business extends CActiveRecord
 	public function getTypeText()
 	{
 		$typeOptions = CHtml::listData(BusinessType::model()->findAll(), 'id', 'name');
-		return isset($typeOptions[$this->type]) ? $typeOptions[$this->type] : "unknown status ({$this->type})";
+		return isset($typeOptions[$this->type]) ? $typeOptions[$this->type] : "-";
 	}
 
 	/**
@@ -215,7 +214,7 @@ class Business extends CActiveRecord
 	public function getPriceText()
 	{
 		$priceOptions = CHtml::listData(PriceType::model()->findAll(), 'id', 'name');
-		return isset($priceOptions[$this->price]) ? $priceOptions[$this->price] : "unknown status ({$this->price})";
+		return isset($priceOptions[$this->price]) ? $priceOptions[$this->price] : "-";
 	}
 
 	/**
@@ -224,7 +223,7 @@ class Business extends CActiveRecord
 	public function getCategoryText()
 	{
 		$categoryOptions = CHtml::listData(CategoryType::model()->findAll(), 'id', 'name');
-		return isset($categoryOptions[$this->category]) ? $categoryOptions[$this->category] : "unknown status ({$this->category})";
+		return isset($categoryOptions[$this->category]) ? $categoryOptions[$this->category] : "-";
 	}
 
 	/**
@@ -233,7 +232,7 @@ class Business extends CActiveRecord
 	public function getCuisineText()
 	{
 		$cuisineOptions = CHtml::listData(CuisineType::model()->findAll(), 'id', 'name');
-		return isset($cuisineOptions[$this->cuisine]) ? $cuisineOptions[$this->cuisine] : "unknown status ({$this->cuisine})";
+		return isset($cuisineOptions[$this->cuisine]) ? $cuisineOptions[$this->cuisine] : "-";
 	}
 
 	/**
@@ -242,7 +241,7 @@ class Business extends CActiveRecord
 	public function getAttireText()
 	{
 		$attireOptions = CHtml::listData(AttireType::model()->findAll(), 'id', 'name');
-		return isset($attireOptions[$this->attire]) ? $attireOptions[$this->attire] : "unknown status ({$this->attire})";
+		return isset($attireOptions[$this->attire]) ? $attireOptions[$this->attire] : "-";
 	}
 
 	/**
@@ -251,6 +250,6 @@ class Business extends CActiveRecord
 	public function getAmbienceText()
 	{
 		$ambienceOptions = CHtml::listData(AmbienceType::model()->findAll(), 'id', 'name');
-		return isset($ambienceOptions[$this->ambience]) ? $ambienceOptions[$this->ambience] : "unknown status ({$this->ambience})";
+		return isset($ambienceOptions[$this->ambience]) ? $ambienceOptions[$this->ambience] : "-";
 	}
 }
