@@ -17,8 +17,8 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<?php echo $form->hiddenField($model,'business_id'); ?>
-	<?php echo $form->textFieldRow($model,'title',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
-	<?php echo $form->textAreaRow($model,'description',array('class'=>'input-xxlarge','rows'=>7, 'cols'=>60)); ?>
+	<?php echo $form->textFieldRow($model,'title',array('class'=>'span6','size'=>60,'maxlength'=>100)); ?>
+	<?php echo $form->textAreaRow($model,'description',array('class'=>'span6','rows'=>7, 'cols'=>60)); ?>
 	<?php echo $form->dropDownListRow($model,'rating',$model->getRatingOption()); ?>
 	
 	<div class="row buttons">
