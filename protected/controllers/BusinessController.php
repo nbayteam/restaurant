@@ -59,11 +59,32 @@ class BusinessController extends Controller
 			'pagination'=>array(
 				'pageSize'=>10,
 			),
+            'sort'=>array(
+                'defaultOrder'=>array(
+                    'create_date'=>CSort::SORT_DESC,
+                ),
+            ),
 		));
+
+        $menuDataProvider = new CActiveDataProvider('Menu', array(
+            'criteria'=>array(
+                'condition'=>'business_id=:businessId',
+                'params'=>array(':businessId'=>$this->loadModel($id)->id),
+            ),
+            'pagination'=>array(
+                'pageSize'=>10,
+            ),
+            'sort'=>array(
+                'defaultOrder'=>array(
+                    'category'=>CSort::SORT_ASC,
+                ),
+            ),
+        ));
 
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 			'reviewDataProvider'=>$reviewDataProvider,
+            'menuDataProvider'=>$menuDataProvider,
 		));
 	}
 

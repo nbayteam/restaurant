@@ -35,7 +35,7 @@ class Review extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-	
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -138,9 +138,9 @@ class Review extends CActiveRecord
 		if($this->isNewRecord)
 		{
 			// Set create_date, user_id adding the review
-			$this->create_date = new CDbExpression('NOW()');
 			$this->user_id = Yii::app()->user->id;
 		}
+        $this->create_date = new CDbExpression('NOW()');
 
 		return parent::beforeValidate();
 	}

@@ -69,9 +69,20 @@ $this->menu=array(
 )); ?>
 
 <br>
+<h1>Menu</h1>
+
+<?php $this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$menuDataProvider,
+    'itemView'=>'/menu/_view',
+)); ?>
+
+<br>
 <h1>Review</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$reviewDataProvider,
 	'itemView'=>'/review/_view',
+    'sortableAttributes'=>array(
+            'create_date'=>'sort date',
+    ),
 )); ?>

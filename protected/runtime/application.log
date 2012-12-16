@@ -2243,3 +2243,366 @@ Stack trace:
 REQUEST_URI=/restaurant/index.php?r=review/create
 HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=review/index
 ---
+2012/12/16 13:14:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/niko/source/yii-1.1.12.b600af/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/admin')
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#11 {main}
+REQUEST_URI=/restaurant/index.php?r=review/admin
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=review/index
+---
+2012/12/16 13:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested business does not exist.' in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php:195
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(215): ReviewController->loadBusiness(NULL)
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): ReviewController->filterBusinessContext(Object(CFilterChain))
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('create')
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/create')
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#13 {main}
+REQUEST_URI=/restaurant/index.php?r=review/create&id=6
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=business/view&id=1
+---
+2012/12/16 13:28:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested business does not exist.' in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php:195
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(215): ReviewController->loadBusiness(NULL)
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): ReviewController->filterBusinessContext(Object(CFilterChain))
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('create')
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/create')
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#13 {main}
+REQUEST_URI=/restaurant/index.php?r=review/create&id=6
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=business/view&id=1
+---
+2012/12/16 13:55:16 [error] [php] Cannot modify header information - headers already sent by (output started at /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php:109) (/Users/niko/source/yii-1.1.12.b600af/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(110): ReviewController->redirect()
+#1 unknown(0): ReviewController->actionUpdate()
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): ReviewController->runAction()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): ReviewController->filterAccessControl()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): ReviewController->runActionWithFilters()
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): ReviewController->run()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=review/update&id=9
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php (110)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2012/12/16 14:06:09 [error] [exception.CException] exception 'CException' with message 'Property "CListView.sort" is not defined.' in /Users/niko/source/yii-1.1.12.b600af/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(162): CComponent->__set('sort', Array)
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(BusinessController), 'zii.widgets.CLi...', Array)
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php(82): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/Users/niko/Doc...')
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, true)
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/Users/niko/Doc...', Array, true)
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#8 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(67): CController->render('view', Array)
+#9 [internal function]: BusinessController->actionView('1')
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#21 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#22 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#24 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=review/update&id=9
+---
+2012/12/16 14:06:44 [error] [exception.CException] exception 'CException' with message 'Property "CListView.sort" is not defined.' in /Users/niko/source/yii-1.1.12.b600af/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(162): CComponent->__set('sort', Array)
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(BusinessController), 'zii.widgets.CLi...', Array)
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php(82): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/Users/niko/Doc...')
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, true)
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/Users/niko/Doc...', Array, true)
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#8 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(67): CController->render('view', Array)
+#9 [internal function]: BusinessController->actionView('1')
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#21 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#22 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#24 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+---
+2012/12/16 14:07:01 [error] [exception.CException] exception 'CException' with message 'Property "CListView.sort" is not defined.' in /Users/niko/source/yii-1.1.12.b600af/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(162): CComponent->__set('sort', Array)
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(BusinessController), 'zii.widgets.CLi...', Array)
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php(82): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/Users/niko/Doc...')
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, true)
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/Users/niko/Doc...', Array, true)
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#8 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(67): CController->render('view', Array)
+#9 [internal function]: BusinessController->actionView('1')
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#21 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#22 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#24 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+---
+2012/12/16 14:18:18 [warning] [application] Failed to set unsafe attribute "description" of "Menu".
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php (80)
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php (218)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2012/12/16 14:24:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "_view".' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('_view')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('_view')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('menu/_view')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=menu/_view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=business/view&id=1
+---
+2012/12/16 14:26:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested business does not exist.' in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php:195
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php(215): MenuController->loadBusiness(NULL)
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): MenuController->filterBusinessContext(Object(CFilterChain))
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('create')
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('menu/create')
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#13 {main}
+REQUEST_URI=/restaurant/index.php?r=menu/create
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/index
+---
+2012/12/16 14:28:17 [warning] [application] Failed to set unsafe attribute "description" of "Menu".
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php (80)
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php (218)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2012/12/16 14:28:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/niko/source/yii-1.1.12.b600af/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('menu/delete')
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#11 {main}
+REQUEST_URI=/restaurant/index.php?r=menu/delete&id=5
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=5
+---
+2012/12/16 14:30:33 [error] [exception.CException] exception 'CException' with message 'Property "Menu.business_name" is not defined.' in /Users/niko/source/yii-1.1.12.b600af/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(144): CComponent->__get('business_name')
+#1 /Users/niko/Documents/yii_project/restaurant/protected/views/menu/_view.php(12): CActiveRecord->__get('business_name')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(131): require('/Users/niko/Doc...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, false)
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CListView.php(260): CBaseController->renderFile('/Users/niko/Doc...', Array)
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(161): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(129): CBaseListView->renderContent()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(174): CBaseListView->run()
+#10 /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php(77): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/Users/niko/Doc...')
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, true)
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/Users/niko/Doc...', Array, true)
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#15 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(88): CController->render('view', Array)
+#16 [internal function]: BusinessController->actionView('1')
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#22 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#26 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#28 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#29 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#30 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#31 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2012/12/16 14:32:43 [error] [exception.CException] exception 'CException' with message 'Property "Menu.business_id__name" is not defined.' in /Users/niko/source/yii-1.1.12.b600af/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(144): CComponent->__get('business_id__na...')
+#1 /Users/niko/Documents/yii_project/restaurant/protected/views/menu/_view.php(12): CActiveRecord->__get('business_id__na...')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(131): require('/Users/niko/Doc...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, false)
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CListView.php(260): CBaseController->renderFile('/Users/niko/Doc...', Array)
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(161): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(129): CBaseListView->renderContent()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(174): CBaseListView->run()
+#10 /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php(77): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/Users/niko/Doc...')
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, true)
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/Users/niko/Doc...', Array, true)
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#15 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(88): CController->render('view', Array)
+#16 [internal function]: BusinessController->actionView('1')
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#22 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#26 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#28 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#29 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#30 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#31 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2012/12/16 14:32:48 [error] [exception.CException] exception 'CException' with message 'Property "Menu.business_id_name" is not defined.' in /Users/niko/source/yii-1.1.12.b600af/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(144): CComponent->__get('business_id_nam...')
+#1 /Users/niko/Documents/yii_project/restaurant/protected/views/menu/_view.php(12): CActiveRecord->__get('business_id_nam...')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(131): require('/Users/niko/Doc...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, false)
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CListView.php(260): CBaseController->renderFile('/Users/niko/Doc...', Array)
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(161): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(129): CBaseListView->renderContent()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(174): CBaseListView->run()
+#10 /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php(77): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/Users/niko/Doc...')
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/niko/Doc...', Array, true)
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/Users/niko/Doc...', Array, true)
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#15 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(88): CController->render('view', Array)
+#16 [internal function]: BusinessController->actionView('1')
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#22 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#26 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#28 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#29 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#30 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#31 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2012/12/16 14:32:52 [error] [php] Trying to get property of non-object (/Users/niko/Documents/yii_project/restaurant/protected/views/menu/_view.php:12)
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CListView.php(260): BusinessController->renderFile()
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(161): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(129): CListView->renderContent()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(174): CListView->run()
+#6 /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php(77): BusinessController->widget()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): BusinessController->renderInternal()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(870): BusinessController->renderFile()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(783): BusinessController->renderPartial()
+#11 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(88): BusinessController->render()
+#12 unknown(0): BusinessController->actionView()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): BusinessController->runAction()
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): BusinessController->filterAccessControl()
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#22 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): BusinessController->runActionWithFilters()
+#23 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): BusinessController->run()
+#24 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#25 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+in /Users/niko/Documents/yii_project/restaurant/protected/views/menu/_view.php (12)
+in /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php (77)
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php (88)
