@@ -29,7 +29,7 @@ class Menu extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-	
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -52,6 +52,7 @@ class Menu extends CActiveRecord
 			array('name', 'length', 'max'=>100),
 			array('price', 'length', 'max'=>6),
 			array('status', 'length', 'max'=>10),
+            array('description', 'length', 'max'=>400),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, business_id, category, name, description, price, status, update_date, create_date', 'safe', 'on'=>'search'),

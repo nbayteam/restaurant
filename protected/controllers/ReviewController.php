@@ -103,7 +103,10 @@ class ReviewController extends Controller
 		{
 			$model->attributes=$_POST['Review'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            {
+                //$this->redirect(array('view','id'=>$model->id));
+                $this->redirect(isset(Yii::app()->user->returnUrl) ? Yii::app()->user->returnUrl : array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('update',array(
@@ -192,7 +195,7 @@ class ReviewController extends Controller
             {
             	// Temporary error
             	// Will redirect to new business creation page
-            	throw new CHttpException(404,'The requested business does not exist.'); 
+            	throw new CHttpException(404,'The requested business does not exist.');
             }
         }
         return $this->_business;
