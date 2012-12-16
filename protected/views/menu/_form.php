@@ -17,10 +17,10 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<?php echo $form->hiddenField($model,'business_id'); ?>
-	<?php echo $form->textFieldRow($model,'category',array('class'=>'input-xlarge','size'=>25,'maxlength'=>25)); ?>
-	<?php echo $form->textFieldRow($model,'name',array('class'=>'input-xlarge','size'=>60,'maxlength'=>100)); ?>
-	<?php echo $form->textAreaRow($model,'description',array('class'=>'input-xxlarge','rows'=>5)); ?>
-	<?php echo $form->textFieldRow($model,'price',array('class'=>'input-medium','prepend'=>'$','append'=>'.00','maxlength'=>6)); ?>
+	<?php echo $form->dropDownListRow($model,'category', CHtml::listData(MenuCategory::model()->findAll(), 'id', 'name'), array('empty'=>'Select a type')); ?>
+	<?php echo $form->textFieldRow($model,'name',array('class'=>'span5','size'=>60,'maxlength'=>100)); ?>
+	<?php echo $form->textAreaRow($model,'description',array('class'=>'span6','rows'=>5)); ?>
+	<?php echo $form->textFieldRow($model,'price',array('class'=>'span2','prepend'=>'$','maxlength'=>6)); ?>
 
 
 	<div class="row buttons">
