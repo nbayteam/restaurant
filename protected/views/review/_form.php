@@ -6,37 +6,21 @@
 
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'review-form',
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+	'id'=>'menu-form',
 	'enableAjaxValidation'=>false,
+	'type'=>'horizontal',
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->hiddenField($model,'business_id'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'title'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'description'); ?>
-        <?php echo $form->textArea($model,'description',array('class'=>'input-xxlarge','rows'=>7, 'cols'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'description'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'rating'); ?>
-		<?php echo $form->dropDownList($model,'rating',$model->getRatingOption()); ?>
-		<?php echo $form->error($model,'rating'); ?>
-	</div>
-
+	<?php echo $form->hiddenField($model,'business_id'); ?>
+	<?php echo $form->textFieldRow($model,'title',array('class'=>'input-xxlarge','size'=>60,'maxlength'=>100)); ?>
+	<?php echo $form->textAreaRow($model,'description',array('class'=>'input-xxlarge','rows'=>7, 'cols'=>60)); ?>
+	<?php echo $form->dropDownListRow($model,'rating',$model->getRatingOption()); ?>
+	
 	<div class="row buttons">
 		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
         <?php $this->widget('bootstrap.widgets.TbButton', array(

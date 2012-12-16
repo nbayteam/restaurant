@@ -13,6 +13,7 @@ $this->menu=array(
 	array('label'=>'Update Business', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Delete Business', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Business', 'url'=>array('admin')),
+	array('label'=>'Add Review', 'url'=>array('menu/create', 'bid'=>$model->id)),
 	array('label'=>'Add Review', 'url'=>array('review/create', 'bid'=>$model->id)),
 );
 ?>

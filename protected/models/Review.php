@@ -56,7 +56,6 @@ class Review extends CActiveRecord
 			array('user_id, business_id', 'numerical', 'integerOnly'=>true),
 			array('rating', 'numerical'),
 			array('title', 'length', 'max'=>100),
-			array('description', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, user_id, business_id, title, description, rating, create_date', 'safe', 'on'=>'search'),
