@@ -3335,3 +3335,47 @@ REQUEST_URI=/restaurant/index.php?r=menucategory/create
 in /Applications/MAMP/htdocs/restaurant/protected/views/menucategory/_form.php (13)
 in /Applications/MAMP/htdocs/restaurant/protected/views/menucategory/create.php (18)
 in /Applications/MAMP/htdocs/restaurant/protected/controllers/MenucategoryController.php (79)
+2012/12/16 18:49:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Applications/MAMP/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/framework/web/CController.php(292): CFilterChain->run()
+#6 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('review/admin')
+#9 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#11 {main}
+REQUEST_URI=/restaurant/index.php?r=review/admin
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=review/index
+---
+2012/12/16 18:56:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested business does not exist.' in /Applications/MAMP/htdocs/restaurant/protected/controllers/ReviewController.php:198
+Stack trace:
+#0 /Applications/MAMP/htdocs/restaurant/protected/controllers/ReviewController.php(218): ReviewController->loadBusiness(NULL)
+#1 /Applications/MAMP/framework/web/filters/CInlineFilter.php(59): ReviewController->filterBusinessContext(Object(CFilterChain))
+#2 /Applications/MAMP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Applications/MAMP/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /Applications/MAMP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /Applications/MAMP/framework/web/CController.php(292): CFilterChain->run()
+#8 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('create')
+#10 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('review/create')
+#11 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#13 {main}
+REQUEST_URI=/restaurant/index.php?r=review/create
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=review/index
+---
+2012/12/17 06:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "menucontroller/create".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('menucontroller/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=menucontroller/create
+---
