@@ -105,9 +105,12 @@ class ReviewController extends Controller
 			if($model->save())
             {
                 //$this->redirect(array('view','id'=>$model->id));
+                //echo Yii::app()->request->urlReferrer;
                 $this->redirect(isset(Yii::app()->user->returnUrl) ? Yii::app()->user->returnUrl : array('view','id'=>$model->id));
             }
 		}
+
+        Yii::app()->user->setReturnUrl(Yii::app()->request->urlReferrer);
 
 		$this->render('update',array(
 			'model'=>$model,

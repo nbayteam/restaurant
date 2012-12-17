@@ -3379,3 +3379,246 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/restaurant/index.php?r=menucontroller/create
 ---
+<<<<<<< HEAD
+=======
+2012/12/16 14:32:52 [error] [php] Trying to get property of non-object (/Users/niko/Documents/yii_project/restaurant/protected/views/menu/_view.php:12)
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CListView.php(260): BusinessController->renderFile()
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(161): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(129): CListView->renderContent()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(174): CListView->run()
+#6 /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php(77): BusinessController->widget()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CBaseController.php(96): BusinessController->renderInternal()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(870): BusinessController->renderFile()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(783): BusinessController->renderPartial()
+#11 /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php(88): BusinessController->render()
+#12 unknown(0): BusinessController->actionView()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): BusinessController->runAction()
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#19 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): BusinessController->filterAccessControl()
+#20 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#22 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): BusinessController->runActionWithFilters()
+#23 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): BusinessController->run()
+#24 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#25 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+in /Users/niko/Documents/yii_project/restaurant/protected/views/menu/_view.php (12)
+in /Users/niko/Documents/yii_project/restaurant/protected/views/business/view.php (77)
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/BusinessController.php (88)
+2012/12/17 03:38:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '8-1' for key 'user_id'. The SQL statement executed was: INSERT INTO `tbl_review` (`business_id`, `title`, `description`, `rating`, `user_id`, `create_date`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, NOW()).
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php (81)
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php (221)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2012/12/17 03:38:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '8-1' for key 'user_id'. The SQL statement executed was: INSERT INTO `tbl_review` (`business_id`, `title`, `description`, `rating`, `user_id`, `create_date`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, NOW())' in /Users/niko/source/yii-1.1.12.b600af/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(81): CActiveRecord->save()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): ReviewController->actionCreate()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(221): CFilterChain->run()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): ReviewController->filterBusinessContext(Object(CFilterChain))
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/create')
+#17 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#19 {main}
+REQUEST_URI=/restaurant/index.php?r=review/create&bid=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=review/create&bid=1
+---
+2012/12/17 05:49:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/view')
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#12 {main}
+REQUEST_URI=/restaurant/index.php?r=review/view&bid=3
+---
+2012/12/17 05:49:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/view')
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#12 {main}
+REQUEST_URI=/restaurant/index.php?r=review/view
+---
+2012/12/17 05:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=1".' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('view?id=1')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view?id=1')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/view?id=...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=review/view?id=1
+---
+2012/12/17 05:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=2".' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('view?id=2')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view?id=2')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/view?id=...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=review/view?id=2
+---
+2012/12/17 05:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=7".' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('view?id=7')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view?id=7')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/view?id=...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=review/view?id=7
+---
+2012/12/17 05:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=8".' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('view?id=8')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view?id=8')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/view?id=...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=review/view?id=8
+---
+2012/12/17 05:49:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=9".' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('view?id=9')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view?id=9')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/view?id=...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=review/view?id=9
+---
+2012/12/17 05:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=10".' in /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('view?id=10')
+#1 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view?id=10')
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('review/view?id=...')
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=review/view?id=10
+---
+2012/12/17 06:10:14 [error] [php] Cannot modify header information - headers already sent by (output started at /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php:108) (/Users/niko/source/yii-1.1.12.b600af/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(110): ReviewController->redirect()
+#1 unknown(0): ReviewController->actionUpdate()
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): ReviewController->runAction()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): ReviewController->filterAccessControl()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): ReviewController->runActionWithFilters()
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): ReviewController->run()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=review/update&id=12
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php (110)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2012/12/17 06:11:03 [error] [php] Cannot modify header information - headers already sent by (output started at /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php:108) (/Users/niko/source/yii-1.1.12.b600af/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(110): ReviewController->redirect()
+#1 unknown(0): ReviewController->actionUpdate()
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): ReviewController->runAction()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): ReviewController->filterAccessControl()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): ReviewController->runActionWithFilters()
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): ReviewController->run()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=review/update&id=12
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php (110)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2012/12/17 06:11:25 [error] [php] Cannot modify header information - headers already sent by (output started at /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php:108) (/Users/niko/source/yii-1.1.12.b600af/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(110): ReviewController->redirect()
+#1 unknown(0): ReviewController->actionUpdate()
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): ReviewController->runAction()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): ReviewController->filterAccessControl()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): ReviewController->runActionWithFilters()
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): ReviewController->run()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=review/update&id=12
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php (110)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2012/12/17 06:12:25 [error] [php] Cannot modify header information - headers already sent by (output started at /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php:108) (/Users/niko/source/yii-1.1.12.b600af/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php(109): ReviewController->redirect()
+#1 unknown(0): ReviewController->actionUpdate()
+#2 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Users/niko/source/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): ReviewController->runAction()
+#6 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): ReviewController->filterAccessControl()
+#9 /Users/niko/source/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/niko/source/yii-1.1.12.b600af/framework/web/CController.php(266): ReviewController->runActionWithFilters()
+#12 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): ReviewController->run()
+#13 /Users/niko/source/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/niko/source/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=review/update&id=12
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/ReviewController.php (109)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+>>>>>>> e47d30ad759852341107fbde0428cac4a6783490
