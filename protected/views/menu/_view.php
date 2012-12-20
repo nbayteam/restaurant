@@ -5,9 +5,6 @@
 
 <div class="view">
 
-	<?php echo CHtml::link('View detail', array('menu/view', 'id'=>$data->id)); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('business_name')); ?>:</b>
 	<?php echo CHtml::encode($data->business->name); ?>
 	<br />
@@ -31,6 +28,17 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
 	<?php echo CHtml::encode($data->status); ?>
 	<br />
+
+	<div class="row">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'link',
+			'url'=>array('menu/view', 'id'=>$data->id),
+		    'label'=>'View Detail',
+		    'type'=>'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+		    'size'=>'small', // null, 'large', 'small' or 'mini'
+		    'htmlOptions'=>array('class'=>'pull-right'),
+		)); ?>
+	</div>
 
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('update_date')); ?>:</b>
