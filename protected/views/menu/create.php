@@ -3,12 +3,12 @@
 /* @var $model Menu */
 
 $this->breadcrumbs=array(
-	'Menus'=>array('index'),
+	'Menus'=>array('index', 'bid'=>$bid),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Menu', 'url'=>array('index')),
+	array('label'=>'List Menu', 'url'=>array('index','bid'=>$bid)),
 	array('label'=>'Manage Menu', 'url'=>array('admin')),
 );
 ?>

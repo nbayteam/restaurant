@@ -133,4 +133,13 @@ class Menu extends CActiveRecord
 
 		return parent::beforeValidate();
 	}
+
+	/**
+	* @return string the category text display for the current menu
+	*/
+	public function getCategoryText()
+	{
+		$categoryOptions = CHtml::listData(MenuCategory::model()->findAll(), 'id', 'name');
+		return isset($categoryOptions[$this->category]) ? $categoryOptions[$this->category] : "-";
+	}
 }

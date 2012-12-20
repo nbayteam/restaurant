@@ -20,7 +20,7 @@ class MenuController extends Controller
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
-			'businessContext + create', // check to ensure valid business context
+			'businessContext + index, create', // check to ensure valid business context
 		);
 	}
 
@@ -58,6 +58,7 @@ class MenuController extends Controller
 	{
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+			// 'bid'=>$this->_business->id,
 		));
 	}
 
@@ -84,6 +85,7 @@ class MenuController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
+			'bid'=>$model->business_id,
 		));
 	}
 
@@ -130,9 +132,22 @@ class MenuController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Menu');
+		// $dataProvider=new CActiveDataProvider('Menu');
+
+		$dataProvider=new CActiveDataProvider('Menu', array(
+			'criteria'=>array(
+				'condition'=>'business_id=:businessId',
+				'params'=>array(':businessId'=>$this->_business->id),
+				'order'=>'create_date DESC',
+			),
+			'pagination'=>array(
+				'pageSize'=>20,
+			),
+		));
+		
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+			'bid'=>$this->_business->id,
 		));
 	}
 

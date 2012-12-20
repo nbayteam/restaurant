@@ -3,13 +3,13 @@
 /* @var $model Menu */
 
 $this->breadcrumbs=array(
-	'Menus'=>array('index'),
+	'Menus'=>array('index', 'bid'=>$model->business_id),
 	$model->name,
 );
 
 $this->menu=array(
-	array('label'=>'List Menu', 'url'=>array('index')),
-	array('label'=>'Create Menu', 'url'=>array('create')),
+	array('label'=>'List Menu', 'url'=>array('index', 'bid'=>$model->business_id)),
+	array('label'=>'Create Menu', 'url'=>array('create', 'bid'=>$model->business_id)),
 	array('label'=>'Update Menu', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Delete Menu', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Menu', 'url'=>array('admin')),
@@ -23,7 +23,10 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'business_id',
-		'category',
+		array(
+			'name'=>'Category',
+			'value'=>$model->getCategoryText(),
+		),
 		'name',
 		'description',
 		'price',

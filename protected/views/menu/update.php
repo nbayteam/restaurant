@@ -3,14 +3,14 @@
 /* @var $model Menu */
 
 $this->breadcrumbs=array(
-	'Menus'=>array('index'),
+	'Menus'=>array('index', 'bid'=>$model->business_id),
 	$model->name=>array('view','id'=>$model->id),
 	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'List Menu', 'url'=>array('index')),
-	array('label'=>'Create Menu', 'url'=>array('create')),
+	array('label'=>'List Menu', 'url'=>array('index', 'bid'=>$model->business_id)),
+	array('label'=>'Create Menu', 'url'=>array('create', 'bid'=>$model->business_id)),
 	array('label'=>'View Menu', 'url'=>array('view', 'id'=>$model->id)),
 	array('label'=>'Manage Menu', 'url'=>array('admin')),
 );
