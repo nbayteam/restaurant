@@ -35,3 +35,13 @@ $this->menu=array(
 		'create_date',
 	),
 )); ?>
+
+<div class="row">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'link',
+		    'label'=>'Add Photo',
+		    'type'=>'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+		    'size'=>'small', // null, 'large', 'small' or 'mini'
+		    'htmlOptions'=>array('class'=>'pull-right', 'style'=>'margin-top: 10px;'),
+		)); ?>
+	</div>

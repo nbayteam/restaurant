@@ -105,4 +105,21 @@ class Photo extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	/**
+     * Prepares create_date, user_id attributes before performing validation.
+     */
+	protected function beforeValidate()
+	{
+		if($this->isNewRecord)
+		{
+			// Set create_date, user_id adding the review
+			$this->user_id = Yii::app()->user->id;
+		}
+
+		$this->primary = "No";
+        $this->create_date = new CDbExpression('NOW()');
+
+		return parent::beforeValidate();
+	}
 }

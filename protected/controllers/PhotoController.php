@@ -9,6 +9,10 @@ class PhotoController extends Controller
 	public $layout='//layouts/column2';
 
 	/**
+      * @var private property containing the associated Business model instance. */
+    private $_menu = null;
+
+	/**
 	 * @return array action filters
 	 */
 	public function filters()
@@ -168,4 +172,45 @@ class PhotoController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	/**
+    * Protected method to load the associated Business model class
+    * @menu_id the primary identifier of the associated Business
+    * @return object the Business data model based on the primary key
+    */
+    protected function loadMenu($menu_id)
+    {
+    	//if the project property is null, create it based on input id
+        if($this->_menu===null)
+        {
+        	$this->_menu=Menu::model()->findbyPk($menu_id);
+        	if($this->_menu===null)
+            {
+            	// Temporary error
+            	// Will redirect to new business creation page
+            	throw new CHttpException(404,'The requested business does not exist.');
+            }
+        }
+        return $this->_menu;
+    }
+
+    /**
+      * In-class defined filter method, configured for use in the above filters() method
+      * It is called before the actionCreate() action method is run in order to ensure a proper project context
+      */
+	public function filterMenuContext($filterChain)
+    {
+   		//set the project identifier based on either the GET or POST
+        //request variables, since we allow both types for our actions
+   		$menuId = null;
+   		if(isset($_GET['mid']))
+   			$menuId = $_GET['mid'];
+   		else if(isset($_POST['mid']))
+   			$menuId = $_POST['mid'];
+
+   		$this->loadMenu($menuId);
+
+   		//complete the running of other filters and execute the requested action
+        $filterChain->run();
+    }
 }

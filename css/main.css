@@ -3,7 +3,7 @@ body
 	margin: 0;
 	padding: 0;
 	color: #555;
-	font: normal 10pt Arial,Helvetica,sans-serif;
+	font: normal 10pt "Open Sans",Arial,Helvetica,sans-serif;
 	background: #EFEFEF;
 }
 
@@ -210,7 +210,7 @@ div.search-form
 
 .operations li a
 {
-	font: bold 12px Arial;
+	font: bold 12px "Open Sans",Arial;
 	color: #0066A4;
 	display: block;
 	padding: 2px 0 2px 8px;
@@ -235,4 +235,11 @@ div.search-form
 #content .compactRadioGroup label,
 #content .compactRadioGroup input {
     display: inline;
+}
+
+@font-face {
+  font-family:"Open Sans";
+  src:url(../fonts/OpenSans-Regular-webfont.eot?#iefix) format(embedded-opentype),url(../fonts/OpenSans-Regular-webfont.woff) format(woff),url(../fonts/OpenSans-Regular-webfont.ttf) format(truetype),url(../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular) format(svg);
+  font-weight:400;
+  font-style:normal;
 }
