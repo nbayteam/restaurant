@@ -18,6 +18,12 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
+
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/css/bootstrap-modal.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/js/bootstrap-modal.js" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/js/bootstrap-modalmanager.js" />
+
+
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
   </head>
 
@@ -54,7 +60,9 @@
             )); ?><!-- breadcrumbs -->
         <?php endif?>
 
-        <?php echo $content; ?>
+        <div class="row">
+            <?php echo $content; ?>
+        </div>
 
         <hr>
 

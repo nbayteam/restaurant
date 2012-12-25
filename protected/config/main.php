@@ -21,6 +21,11 @@ return array(
 		'application.components.*',
 	),
 
+    'aliases' => array(
+        //If you manually installed it
+        'xupload' => 'ext.xupload',
+    ),
+
 	// Set default controller for the portal
 	'defaultController'=>'business',
 
@@ -51,6 +56,13 @@ return array(
 		'bootstrap'=>array(
 			'class'=>'ext.bootstrap.components.Bootstrap',
 		),
+        'image'=>array(
+          'class'=>'application.extensions.image.CImageComponent',
+            // GD or ImageMagick
+            'driver'=>'GD',
+            // ImageMagick setup path
+            'params'=>array('directory'=>'/opt/local/bin'),
+        ),
 
 
 		// uncomment the following to enable URLs in path-format
@@ -86,7 +98,7 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
+					'levels'=>'error, warning, info',
 				),
 				// uncomment the following to show log messages on web pages
 				/*

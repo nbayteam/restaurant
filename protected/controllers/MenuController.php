@@ -56,8 +56,19 @@ class MenuController extends Controller
 	 */
 	public function actionView($id)
 	{
+        Yii::import( "xupload.models.XUploadForm" );
+        $photos = new XUploadForm;
+
+        //Clear the user's session
+        Yii::app( )->user->setState( 'images', null );
+        Yii::app( )->user->setState( 'addPhotosTo', null );
+
+        // set session addPhotosTo to menu to tell Photo to link photos to menu
+        Yii::app( )->user->setState( 'addPhotosTo', ['menu', $id] );
+
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+            'photos'=>$photos,
 			// 'bid'=>$this->_business->id,
 		));
 	}
@@ -144,7 +155,7 @@ class MenuController extends Controller
 				'pageSize'=>20,
 			),
 		));
-		
+
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 			'bid'=>$this->_business->id,
@@ -207,7 +218,7 @@ class MenuController extends Controller
             {
             	// Temporary error
             	// Will redirect to new business creation page
-            	throw new CHttpException(404,'The requested business does not exist.'); 
+            	throw new CHttpException(404,'The requested business does not exist.');
             }
         }
         return $this->_business;
