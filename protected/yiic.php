@@ -13,7 +13,7 @@ if ($host == "niko") {
 }
 else{
     # yuyu settings
-    $yiic=dirname(__FILE__).'/../../../framework/yiic.php';
+    $yiic=dirname(__FILE__).'/../../../framework/yii/1.1.12/framework/yiic.php';
 }
 
 $config=dirname(__FILE__).'/config/console.php';

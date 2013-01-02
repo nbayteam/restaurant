@@ -89,8 +89,12 @@ $this->beginWidget('bootstrap.widgets.TbModal',
                 //Thats becase the default widget includes the 'form'
                 //which we don't want here
                 'formView' => 'application.views.photo.xup',
-                )
-            );
+                'options' => array(
+                    'maxNumberOfFiles'=>2,
+                    'maxFileSize'=>10000000,
+                    'acceptFileTypes' => "js:/(\.|\/)(jpe?g|png)$/i",
+                ),
+            ));
             ?>
             <?php $this->endWidget(); ?>
         </div>

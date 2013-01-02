@@ -56,13 +56,9 @@ return array(
 		'bootstrap'=>array(
 			'class'=>'ext.bootstrap.components.Bootstrap',
 		),
-        'image'=>array(
-          'class'=>'application.extensions.image.CImageComponent',
-            // GD or ImageMagick
-            'driver'=>'GD',
-            // ImageMagick setup path
-            'params'=>array('directory'=>'/opt/local/bin'),
-        ),
+     //    'phpThumb'=>array(
+	    //     'class'=>'ext.EPhpThumb.EPhpThumb',
+	    // ),
 
 
 		// uncomment the following to enable URLs in path-format
