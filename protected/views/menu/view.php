@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Menu #<?php echo $model->id; ?></h1>
+<h1>Menu: <?php echo $model->name; ?></h1>
 
 <?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
@@ -77,8 +77,28 @@ $this->beginWidget('bootstrap.widgets.TbModal',
         ?>
         <div>
             <?php
-            $this->widget( 'xupload.XUpload', array(
-                'url' => Yii::app( )->createUrl( "/photo/uploadPhotos"),
+            $this->widget('xupload.XUpload', array(
+                // --------------------------------
+                // Backup
+                // --------------------------------
+                // 'url' => Yii::app()->createUrl("/photo/uploadPhotos"),
+                // //our XUploadForm
+                // 'model' => $photos,
+                // //We set this for the widget to be able to target our own form
+                // 'htmlOptions' => array('id'=>'upload-photos-form', "class"=>"span7"),
+                // 'attribute' => 'file',
+                // 'multiple' => true,
+                // //Note that we are using a custom view for our widget
+                // //Thats becase the default widget includes the 'form'
+                // //which we don't want here
+                // 'formView' => 'application.views.photo.xup',
+                // 'options' => array(
+                //     'maxNumberOfFiles'=>2,
+                //     'maxFileSize'=>10000000,
+                //     'acceptFileTypes' => "js:/(\.|\/)(jpe?g|png)$/i",
+                // ),
+
+                'url' => Yii::app()->createUrl("photo/postPhotos"),
                 //our XUploadForm
                 'model' => $photos,
                 //We set this for the widget to be able to target our own form
@@ -88,11 +108,17 @@ $this->beginWidget('bootstrap.widgets.TbModal',
                 //Note that we are using a custom view for our widget
                 //Thats becase the default widget includes the 'form'
                 //which we don't want here
-                'formView' => 'application.views.photo.xup',
+                'uploadView' => 'application.views.photo.upload',
+                'downloadView' => 'application.views.photo.download',
                 'options' => array(
                     'maxNumberOfFiles'=>2,
                     'maxFileSize'=>10000000,
                     'acceptFileTypes' => "js:/(\.|\/)(jpe?g|png)$/i",
+                    'submit' => "js:function (e, data) {
+                        var inputs = data.context.find(':input');
+                        data.formData = inputs.serializeArray();
+                        return true;
+                    }",
                 ),
             ));
             ?>

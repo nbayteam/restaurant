@@ -22,7 +22,7 @@ class PhotoController extends Controller
         return array(
             'accessControl', // perform access control for CRUD operations
             'postOnly + delete', // we only allow deletion via POST request
-       );
+     );
     }
 
     /**
@@ -34,21 +34,21 @@ class PhotoController extends Controller
     {
         return array(
             array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','view'),
+                'actions'=>array('index','view', 'postPhotos'),
                 'users'=>array('*'),
-           ),
+         ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update','uploadPhotos'),
+                'actions'=>array('create','update','uploadPhotos', 'postPhotos'),
                 'users'=>array('@'),
-           ),
+         ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
                 'actions'=>array('admin','delete'),
                 'users'=>array('admin'),
-           ),
+         ),
             array('deny',  // deny all users
                 'users'=>array('*'),
-           ),
-       );
+         ),
+     );
     }
 
     /**
@@ -59,7 +59,7 @@ class PhotoController extends Controller
     {
         $this->render('view',array(
             'model'=>$this->loadModel($id),
-       ));
+     ));
     }
 
     /**
@@ -82,7 +82,7 @@ class PhotoController extends Controller
 
         $this->render('create',array(
             'model'=>$model,
-       ));
+     ));
     }
 
     /**
@@ -106,7 +106,7 @@ class PhotoController extends Controller
 
         $this->render('update',array(
             'model'=>$model,
-       ));
+     ));
     }
 
     /**
@@ -131,7 +131,7 @@ class PhotoController extends Controller
         $dataProvider=new CActiveDataProvider('Photo');
         $this->render('index',array(
             'dataProvider'=>$dataProvider,
-       ));
+     ));
     }
 
     /**
@@ -146,12 +146,129 @@ class PhotoController extends Controller
 
         $this->render('admin',array(
             'model'=>$model,
-       ));
+     ));
     }
 
+    /**
+    * Creates a new model.
+    * If creation is successful, the browser will display the models.
+    */
+    public function actionPostPhotos()
+    {
+        // Yii::import("xupload.models.XUploadForm");
+        $path = realpath(Yii::app()->getBasePath()."/../images/") . "/tmp/";
+        $thumbsPath = realpath(Yii::app()->getBasePath()."/../images/") . "/tmp/thumbs/";
+        $publicPath = Yii::app()->getBaseUrl()."/images/tmp/";
+        $privatePath = realpath(Yii::app()->getBasePath()."/../images")."/";
+        $privateThumbPath = realpath(Yii::app()->getBasePath()."/../images")."/";
+
+        // --------------------------
+        // Original path checking
+        // --------------------------
+        Yii::log('Path value is ' . $path);
+        Yii::log('thumbsPath value is ' . $thumbsPath);
+
+        header('Vary: Accept');
+        if(isset($_SERVER['HTTP_ACCEPT'])
+            && (strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false)) {
+            header('Content-type: application/json');
+        } else {
+            header('Content-type: text/plain');
+        }
+
+        if(isset($_GET["_method"])) {
+            if($_GET["_method"] == "delete") {
+                $success = is_file($_GET["file"]) && $_GET["file"][0] !== '.' && unlink($_GET["file"]);
+                echo json_encode($success);
+            }
+        } else {
+            $this->init();
+            $model = new Photo;   //Here we instantiate our model
+ 
+            //We get the uploaded instance
+            $model->file = CUploadedFile::getInstance($model, 'file');
+            
+            if($model->file !== null) {
+                Yii::log('file != null');
+                $model->mime_type = $model->file->getType();
+                $model->size = $model->file->getSize();
+                $model->name = $model->file->getName();
+                //(optional) Generate a random name for our file
+                $filename = md5(Yii::app()->user->id.microtime().$model->name);
+                $filename .= ".".$model->file->getExtensionName();
+                //Initialize the ddditional Fields, note that we retrieve the
+                //fields as if they were in a normal $_POST array
+                $model->description  = Yii::app()->request->getPost('description', '');
+ 
+
+                if($model->validate()) {
+
+                    // --------------------------
+                    // Check and create directories
+                    // --------------------------
+                    if(!is_dir($path)) {
+                        mkdir($path, 0777, true);
+                        chmod ($path , 0777);
+                    }
+                    if(!is_dir($thumbsPath)) {
+                        mkdir($thumbsPath, 0777, true);
+                        chmod ($thumbsPath , 0777);
+                    }
+                    $model->file->saveAs($path.$filename);
+                    chmod($path.$filename, 0777);
+
+                    //Now we need to save this path to the user's session
+                   //  if(Yii::app()->user->hasState('images')) {
+                   //      $userImages = Yii::app()->user->getState('images');
+                   //  } else {
+                   //      $userImages = array();
+                   //  }
+                   //   $userImages[] = array(
+                   //      "path" => $path.$filename,
+                   //      //the same file or a thumb version that you generated
+                   //      "thumb" => $path.$filename,
+                   //      "filename" => $filename,
+                   //      'size' => $model->size,
+                   //      'mime' => $model->mime_type,
+                   //      'name' => $model->name,
+                   //      'description' => $model->description,
+                   // );
+                   //  Yii::app()->user->setState('images', $userImages);
+ 
+                    //Now we return our json
+                    echo json_encode(array(array(
+                            "name" => $model->name,
+                            "type" => $model->mime_type,
+                            "size" => $model->size,
+                            //And the description
+                            "description" => $model->description,
+                            "url" => $publicPath.$filename,
+                            "thumbnail_url" => $publicPath.$filename,
+                            "delete_url" => $this->createUrl("postPhotos", array(
+                                "_method" => "delete",
+                                "file" => $path.$filename
+                          )),
+                            "delete_type" => "POST"
+                      )));
+                } else {
+                    echo json_encode(array(array("error" => $model->getErrors('file'),)));
+                    Yii::log("XUploadAction: ".CVarDumper::dumpAsString($model->getErrors()), CLogger::LEVEL_ERROR, "xupload.actions.XUploadAction");
+                }
+            } else {
+                Yii::log('file == null');
+                throw new CHttpException(500, "Could not upload file");
+            }
+        }
+    }
+
+
+    /**
+    * Creates a new model.
+    * If creation is successful, the browser will display the models.
+    */
     public function actionUploadPhotos()
     {
-        Yii::import("xupload.models.XUploadForm");
+        //Yii::import("xupload.models.XUploadForm");
         //Here we define the paths where the files will be stored temporarily
         $path = realpath(Yii::app()->getBasePath()."/../images/") . "/tmp/";
         $thumbsPath = realpath(Yii::app()->getBasePath()."/../images/") . "/tmp/thumbs/";
@@ -262,7 +379,7 @@ class PhotoController extends Controller
                         'size' => $model->size,
                         'mime' => $model->mime_type,
                         'name' => $model->name,
-                   );
+                 );
                     Yii::app()->user->setState('images', $userImages);
                     */
 
@@ -344,28 +461,28 @@ class PhotoController extends Controller
                                 "delete_url" => $this->createUrl("uploadPhotos", array(
                                     "_method" => "delete",
                                     "file" => $filename
-                               )),
+                             )),
                                 "delete_type" => "POST"
-                           )));
+                         )));
                     }
                     else{
                         //If the upload failed for some reason we log some data and let the widget know
                         echo json_encode(array(
                             array("error" => $model->getErrors('file'),
-                       )));
+                     )));
                         Yii::log("XUploadAction: ".CVarDumper::dumpAsString($model->getErrors()),
                             CLogger::LEVEL_ERROR, "xupload.actions.XUploadAction"
-                       );
+                     );
                     }
 
                 } else {
                     //If the upload failed for some reason we log some data and let the widget know
                     echo json_encode(array(
                         array("error" => $model->getErrors('file'),
-                   )));
+                 )));
                     Yii::log("XUploadAction: ".CVarDumper::dumpAsString($model->getErrors()),
                         CLogger::LEVEL_ERROR, "xupload.actions.XUploadAction"
-                   );
+                 );
                 }
             } else {
                 throw new CHttpException(500, "Could not upload file");

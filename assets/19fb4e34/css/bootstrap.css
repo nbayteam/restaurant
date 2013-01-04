@@ -5892,6 +5892,16 @@ a.badge:hover {
   position: fixed;
 }
 
+td.preview-download {
+  width: 200px;
+}
+td.name-upload {
+  width: 320px;
+}
+td.name {
+  width: 65%;
+}
+
 @font-face {
   font-family:"Open Sans";
   src:url(../fonts/OpenSans-Regular-webfont.eot?#iefix) format(embedded-opentype),url(../fonts/OpenSans-Regular-webfont.woff) format(woff),url(../fonts/OpenSans-Regular-webfont.ttf) format(truetype),url(../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular) format(svg);

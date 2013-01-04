@@ -18,6 +18,12 @@
  */
 class Photo extends CActiveRecord
 {
+	public $file;
+	public $mime_type;
+    public $size;
+    public $name;
+    public $filename;
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -44,7 +50,7 @@ class Photo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, description, picture, primary, create_date', 'required'),
+			array('user_id, primary, create_date', 'required'),
 			array('user_id', 'numerical', 'integerOnly'=>true),
 			array('description, picture', 'length', 'max'=>255),
 			array('primary', 'length', 'max'=>6),

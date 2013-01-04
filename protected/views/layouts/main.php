@@ -67,7 +67,7 @@
         <hr>
 
         <footer>
-            Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+            Copyright &copy; <?php echo date('Y'); ?> by NBAY.<br/>
             All Rights Reserved.<br/>
             <?php echo Yii::powered(); ?>
         </footer>
