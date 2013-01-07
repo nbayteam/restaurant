@@ -189,10 +189,12 @@ class PhotoController extends Controller
                 $model->mime_type = $model->file->getType();
                 $model->size = $model->file->getSize();
                 $model->name = $model->file->getName();
+
                 //(optional) Generate a random name for our file
                 $filename = md5(Yii::app()->user->id.microtime().$model->name);
                 $filename .= ".".$model->file->getExtensionName();
-                //Initialize the ddditional Fields, note that we retrieve the
+
+                //Initialize the addditional Fields, note that we retrieve the
                 //fields as if they were in a normal $_POST array
                 $model->description  = Yii::app()->request->getPost('description', '');
  
@@ -223,8 +225,6 @@ class PhotoController extends Controller
                     $thumb = Yii::app()->phpThumb->create($path.$filename)
                          ->resize(200,200)
                           ->save($thumbsPath.$filename);
-
-
 
                     // Now we need to save this path to the user's session
                     if(Yii::app()->user->hasState('images')) {
@@ -272,7 +272,6 @@ class PhotoController extends Controller
 
     public function actionPostPhotos()
     {
-
         if(Yii::app()->user->hasState('images')) {
             $userImages = Yii::app()->user->getState('images');
 
@@ -305,244 +304,11 @@ class PhotoController extends Controller
                     throw new Exception('Could not save photos');
                 }
 
-
             }
 
-            // redirect user back to Menu page
-            //$this->redirect(isset(Yii::app()->user->returnUrl) ? Yii::app()->user->returnUrl : array('view','id'=>$model->id));
-
-            //Yii::app()->user->setReturnUrl(Yii::app()->request->urlReferrer);
             $this->redirect(array('menu/view', 'id'=>$_GET['bid']));
         }
 
-    }
-
-    /**
-    * Creates a new model.
-    * If creation is successful, the browser will display the models.
-    */
-    public function actionUploadPhotosBackup()
-    {
-        //Yii::import("xupload.models.XUploadForm");
-        //Here we define the paths where the files will be stored temporarily
-        $path = realpath(Yii::app()->getBasePath()."/../images/") . "/tmp/";
-        $thumbsPath = realpath(Yii::app()->getBasePath()."/../images/") . "/tmp/thumbs/";
-        $publicPath = Yii::app()->getBaseUrl()."/images/";
-        $privatePath = realpath(Yii::app()->getBasePath()."/../images")."/";
-        $privateThumbPath = realpath(Yii::app()->getBasePath()."/../images")."/";
-
-        // --------------------------
-        // Original path checking
-        // --------------------------
-        Yii::log('Path value is ' . $path);
-        Yii::log('thumbsPath value is ' . $thumbsPath);
-
-        //This is for IE which doens't handle 'Content-type: application/json' correctly
-        header('Vary: Accept');
-        if(isset($_SERVER['HTTP_ACCEPT'])
-            && (strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false)) {
-            header('Content-type: application/json');
-        } else {
-            header('Content-type: text/plain');
-        }
-
-        //Here we check if we are deleting and uploaded file
-        if(isset($_GET["_method"])) {
-            if($_GET["_method"] == "delete") {
-                if($_GET["file"][0] !== '.') {
-                    // Check for session state
-                    $addPhotosTo = Yii::app()->user->getState('addPhotosTo');
-                    $addPhotosToType = $addPhotosTo[0];
-                    $addPhotosToId = $addPhotosTo[1];
-
-                    // remove photo file
-                    $file = $privatePath.'menus/'.$addPhotosToId.'/' . $_GET["file"];
-                    Yii::log("file is " . $file);
-                    if(is_file($file)) {
-                        unlink($file);
-                    }
-                    // remove thumbnail file
-                    $thumbsFile = $privateThumbPath.'menus/'.$addPhotosToId.'/thumbs/' . $_GET["file"];
-                    if(is_file($thumbsFile)) {
-                        unlink($thumbsFile);
-                    }
-                }
-                echo json_encode(true);
-            }
-        } else {
-            $model = new XUploadForm;
-            $model->file = CUploadedFile::getInstance($model, 'file');
-            //We check that the file was successfully uploaded
-            if($model->file !== null) {
-                //Grab some data
-                $model->mime_type = $model->file->getType();
-                $model->size = $model->file->getSize();
-                $model->name = $model->file->getName();
-                //(optional) Generate a random name for our file
-                $filename = md5(Yii::app()->user->id.microtime().$model->name);
-                $filename .= ".".$model->file->getExtensionName();
-                if($model->validate()) {
-                    // create $path if it doesn't exist
-                    if(!is_dir($path)) {
-                        mkdir($path, 0777, true);
-                        chmod($path, 0777);
-                    }
-
-                    // create $thumbsPath if it doesn't exist
-                    if(!is_dir($thumbsPath)) {
-                        mkdir($thumbsPath, 0777, true);
-                        chmod($thumbsPath, 0777);
-                    }
-
-                    //Move our file to our temporary dir
-                    $model->file->saveAs($path.$filename);
-                    chmod($path.$filename, 0777);
-
-                    // --------------------------
-                    // Temporary path checking
-                    // --------------------------
-                    Yii::log('temporary path is ' . $path.$filename);
-                    Yii::log('temporary thumbs path is ' . $thumbsPath.$filename);
-
-                    //here you can also generate the image versions you need
-                    //using something like PHPThumb
-
-                    // --------------------------
-                    // Creating thumbnail
-                    // --------------------------
-                    $thumb=new EPhpThumb();
-                    $thumb->init(); //this is needed
-
-                    //chain functions
-                    $thumb->create($path.$filename)
-                          ->resize(200,200)
-                          ->save($thumbsPath.$filename);
-
-
-                    //Now we need to save this path to the user's session
-                    /*
-                    if(Yii::app()->user->hasState('images')) {
-                        $userImages = Yii::app()->user->getState('images');
-                    } else {
-                        $userImages = array();
-                    }
-                     $userImages[] = array(
-                        "path" => $path.$filename,
-                        //the same file or a thumb version that you generated
-                        "thumb" => $thumbsPath.$filename,
-                        "filename" => $filename,
-                        'size' => $model->size,
-                        'mime' => $model->mime_type,
-                        'name' => $model->name,
-                 );
-                    Yii::app()->user->setState('images', $userImages);
-                    */
-
-                    // save photo into database
-                    $newPhotoModel = new Photo;
-                    $newPhotoModel->user_id = Yii::app()->user->id;
-                    $newPhotoModel->description = "helloworld";
-                    $newPhotoModel->picture = $filename;
-
-                    $succeed = false;
-                    if ($newPhotoModel->save()){
-                        if(Yii::app()->user->hasState('addPhotosTo')) {
-                            $addPhotosTo = Yii::app()->user->getState('addPhotosTo');
-                            $addPhotosToType = $addPhotosTo[0];
-                            $addPhotosToId = $addPhotosTo[1];
-                            if ($addPhotosToType === 'menu') {
-                                $newPhotosMenu = new PhotosMenu;
-                                $newPhotosMenu->photo_id = $newPhotoModel->id;
-                                $newPhotosMenu->menu_id = $addPhotosToId;
-                                if ($newPhotosMenu->save())
-                                {
-                                    $succeed = true;
-                                    $privatePath = $privatePath.'menus/'.$addPhotosToId.'/';
-                                    $privateThumbPath = $privateThumbPath.'menus/'.$addPhotosToId.'/thumbs/';
-                                    $publicPath = $publicPath.'menus/'.$addPhotosToId.'/';
-                                }
-                            }
-                        }
-                    }
-
-                    if ($succeed)
-                    {
-                        // move images to correct folder
-                        //Create the folder and give permissions if it doesnt exists
-                        Yii::log('check1 '.$privatePath);
-                        if(!is_dir($privatePath)) {
-                            mkdir($privatePath);
-                            chmod($privatePath, 0777);
-                        }
-                        Yii::log('check2 '.$privateThumbPath);
-                        if(!is_dir($privateThumbPath)) {
-                            mkdir($privateThumbPath);
-                            chmod($privateThumbPath, 0777);
-                        }
-                        Yii::log('check3');
-
-                        // original image
-                        $tmpImagePath = $path.$filename;
-                        if(is_file($tmpImagePath)) {
-                            if(rename($tmpImagePath, $privatePath.$filename)) {
-                                chmod($privatePath.$filename, 0777);
-                            }
-                        } else {
-                            //You can also throw an execption here to rollback the transaction
-                            Yii::log($tmpImagePath." is not a file", CLogger::LEVEL_WARNING);
-                        }
-
-                        // thumb image
-                        $tmpThumbPath = $thumbsPath.$filename;
-                        if(is_file($tmpThumbPath)) {
-                            if(rename($tmpThumbPath, $privateThumbPath.$filename)) {
-                                chmod($privateThumbPath.$filename, 0777);
-                            }
-                        } else {
-                            //You can also throw an execption here to rollback the transaction
-                            Yii::log($tmpThumbPath." is not a file", CLogger::LEVEL_WARNING);
-                        }
-
-                        //Now we need to tell our widget that the upload was succesfull
-                        //We do so, using the json structure defined in
-                        // https://github.com/blueimp/jQuery-File-Upload/wiki/Setup
-                        echo json_encode(array(array(
-                                "name" => $model->name,
-                                "type" => $model->mime_type,
-                                "size" => $model->size,
-                                "url" => $publicPath.$filename,
-                                //"thumbnail_url" => $publicPath.$filename,
-                                "thumbnail_url" => $publicPath.'/thumbs/'.$filename,
-                                "delete_url" => $this->createUrl("uploadPhotos", array(
-                                    "_method" => "delete",
-                                    "file" => $filename
-                             )),
-                                "delete_type" => "POST"
-                         )));
-                    }
-                    else{
-                        //If the upload failed for some reason we log some data and let the widget know
-                        echo json_encode(array(
-                            array("error" => $model->getErrors('file'),
-                     )));
-                        Yii::log("XUploadAction: ".CVarDumper::dumpAsString($model->getErrors()),
-                            CLogger::LEVEL_ERROR, "xupload.actions.XUploadAction"
-                     );
-                    }
-
-                } else {
-                    //If the upload failed for some reason we log some data and let the widget know
-                    echo json_encode(array(
-                        array("error" => $model->getErrors('file'),
-                 )));
-                    Yii::log("XUploadAction: ".CVarDumper::dumpAsString($model->getErrors()),
-                        CLogger::LEVEL_ERROR, "xupload.actions.XUploadAction"
-                 );
-                }
-            } else {
-                throw new CHttpException(500, "Could not upload file");
-            }
-        }
     }
 
     /**
