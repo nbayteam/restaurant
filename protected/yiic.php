@@ -9,7 +9,7 @@ if (count($pathinfo) >= 3) {
 }
 if ($host == "niko") {
     # niko settings
-    $yiic=dirname(__FILE__).'/../../../../source/yii-1.1.12.b600af/framework/yiic.php';
+    $yiic=dirname(__FILE__).'/../../../../source/yii/1.1.13/framework/yiic.php';
 }
 else{
     # yuyu settings

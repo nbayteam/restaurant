@@ -9,7 +9,7 @@ if (count($pathinfo) >= 3) {
 }
 if ($host == "niko") {
     // niko settings
-    $yii=dirname(__FILE__).'/../../../source/yii-1.1.12.b600af/framework/yii.php';
+    $yii=dirname(__FILE__).'/../../../source/yii/1.1.13/framework/yii.php';
 }
 else{
     // yuyu settings
