@@ -1,7 +1,5 @@
 <?php
 
-Yii::import("ext.EPhpThumb.EPhpThumb");
-
 class PhotoController extends Controller
 {
     /**
@@ -153,14 +151,12 @@ class PhotoController extends Controller
     * Creates a new model.
     * If creation is successful, the browser will display the models.
     */
-    public function actionPostPhotos()
+    public function actionUploadPhotos()
     {
         // Yii::import("xupload.models.XUploadForm");
         $path = realpath(Yii::app()->getBasePath()."/../images/") . "/tmp/";
         $thumbsPath = realpath(Yii::app()->getBasePath()."/../images/") . "/tmp/thumbs/";
         $publicPath = Yii::app()->getBaseUrl()."/images/tmp/";
-        $privatePath = realpath(Yii::app()->getBasePath()."/../images")."/";
-        $privateThumbPath = realpath(Yii::app()->getBasePath()."/../images")."/";
 
         // --------------------------
         // Original path checking
@@ -178,7 +174,8 @@ class PhotoController extends Controller
 
         if(isset($_GET["_method"])) {
             if($_GET["_method"] == "delete") {
-                $success = is_file($_GET["file"]) && $_GET["file"][0] !== '.' && unlink($_GET["file"]);
+                $thumbsFile = $thumbsPath . basename($_GET['file']);
+                $success = is_file($_GET["file"]) && $_GET["file"][0] !== '.' && unlink($_GET["file"]) && unlink($thumbsFile);
                 echo json_encode($success);
             }
         } else {
@@ -189,7 +186,6 @@ class PhotoController extends Controller
             $model->file = CUploadedFile::getInstance($model, 'file');
             
             if($model->file !== null) {
-                Yii::log('file != null');
                 $model->mime_type = $model->file->getType();
                 $model->size = $model->file->getSize();
                 $model->name = $model->file->getName();
@@ -217,23 +213,36 @@ class PhotoController extends Controller
                     $model->file->saveAs($path.$filename);
                     chmod($path.$filename, 0777);
 
-                    //Now we need to save this path to the user's session
-                   //  if(Yii::app()->user->hasState('images')) {
-                   //      $userImages = Yii::app()->user->getState('images');
-                   //  } else {
-                   //      $userImages = array();
-                   //  }
-                   //   $userImages[] = array(
-                   //      "path" => $path.$filename,
-                   //      //the same file or a thumb version that you generated
-                   //      "thumb" => $path.$filename,
-                   //      "filename" => $filename,
-                   //      'size' => $model->size,
-                   //      'mime' => $model->mime_type,
-                   //      'name' => $model->name,
-                   //      'description' => $model->description,
-                   // );
-                   //  Yii::app()->user->setState('images', $userImages);
+                    //here you can also generate the image versions you need
+                    //using something like PHPThumb
+
+                    // --------------------------
+                    // Creating thumbnail
+                    // --------------------------
+                    //chain functions
+                    $thumb = Yii::app()->phpThumb->create($path.$filename)
+                         ->resize(200,200)
+                          ->save($thumbsPath.$filename);
+
+
+
+                    // Now we need to save this path to the user's session
+                    if(Yii::app()->user->hasState('images')) {
+                        $userImages = Yii::app()->user->getState('images');
+                    } else {
+                        $userImages = array();
+                    }
+                     $userImages[] = array(
+                        "path" => $path.$filename,
+                        //the same file or a thumb version that you generated
+                        "thumb" => $thumbsPath.$filename,
+                        "filename" => $filename,
+                        'size' => $model->size,
+                        'mime' => $model->mime_type,
+                        'name' => $model->name,
+                        'description' => $model->description,
+                   );
+                    Yii::app()->user->setState('images', $userImages);
  
                     //Now we return our json
                     echo json_encode(array(array(
@@ -243,8 +252,8 @@ class PhotoController extends Controller
                             //And the description
                             "description" => $model->description,
                             "url" => $publicPath.$filename,
-                            "thumbnail_url" => $publicPath.$filename,
-                            "delete_url" => $this->createUrl("postPhotos", array(
+                            "thumbnail_url" => $publicPath."thumbs/".$filename,
+                            "delete_url" => $this->createUrl("uploadPhotos", array(
                                 "_method" => "delete",
                                 "file" => $path.$filename
                           )),
@@ -261,12 +270,58 @@ class PhotoController extends Controller
         }
     }
 
+    public function actionPostPhotos()
+    {
+
+        if(Yii::app()->user->hasState('images')) {
+            $userImages = Yii::app()->user->getState('images');
+
+            // Create model and save model
+            foreach($userImages as $image) {
+                $photo = new Photo;
+                $photo->picture = $image["filename"];
+                $photo->description = $image["description"];
+
+                if($photo->save()) {
+                    if(Yii::app()->user->hasState('addPhotosTo')) {
+                        $addPhotosTo = Yii::app()->user->getState('addPhotosTo');
+                        $addPhotosToType = $addPhotosTo[0];
+                        $addPhotosToId = $addPhotosTo[1];
+                        Yii::log('addphotototype is ' . $addPhotosToType);
+                        Yii::log('addphototoid is ' . $addPhotosToId);
+                        
+                        if ($addPhotosToType == 'menu') {
+                            $photoMenu = new PhotosMenu;
+                            $photoMenu->photo_id = $photo->id;
+                            $photoMenu->menu_id = $addPhotosToId;
+                            $photoMenu->save();
+                        }
+                    }
+                } else {
+                    // Log error
+                    Yii::log("Could not save photo to DB:\n" . CVarDumper::dumpAsString($photo->getErrors()), CLogger::LEVEL_ERROR);
+
+                    // This exception will rollback the transaction
+                    throw new Exception('Could not save photos');
+                }
+
+
+            }
+
+            // redirect user back to Menu page
+            //$this->redirect(isset(Yii::app()->user->returnUrl) ? Yii::app()->user->returnUrl : array('view','id'=>$model->id));
+
+            //Yii::app()->user->setReturnUrl(Yii::app()->request->urlReferrer);
+            $this->redirect(array('menu/view', 'id'=>$_GET['bid']));
+        }
+
+    }
 
     /**
     * Creates a new model.
     * If creation is successful, the browser will display the models.
     */
-    public function actionUploadPhotos()
+    public function actionUploadPhotosBackup()
     {
         //Yii::import("xupload.models.XUploadForm");
         //Here we define the paths where the files will be stored temporarily

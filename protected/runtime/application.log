@@ -1,15 +1,1211 @@
-2013/01/04 10:55:20 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
-in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (168)
+2013/01/05 10:17:05 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
 in /Applications/MAMP/htdocs/restaurant/index.php (27)
-2013/01/04 10:55:20 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
-in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (169)
+2013/01/05 10:17:05 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
 in /Applications/MAMP/htdocs/restaurant/index.php (27)
-2013/01/04 10:55:20 [info] [application] file != null
-in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (192)
+2013/01/05 10:17:07 [info] [application] photo id is 
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
 in /Applications/MAMP/htdocs/restaurant/index.php (27)
-2013/01/04 10:55:28 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
-in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (168)
+2013/01/05 10:17:07 [info] [application] photo id after save is 62
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (293)
 in /Applications/MAMP/htdocs/restaurant/index.php (27)
-2013/01/04 10:55:28 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
-in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (169)
+2013/01/05 10:17:07 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (298)
 in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:17:07 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (299)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:17:07 [info] [application] inside menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (302)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:17:07 [info] [application] photo menu photo id 62
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (306)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:17:07 [info] [application] photo menu menu id 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (307)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:17:07 [info] [application] photo menu saved
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (310)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:19:46 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:19:46 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:19:47 [info] [application] photo id after save is 63
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:19:47 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (296)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:19:47 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (297)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:19:47 [info] [application] inside menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (300)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:14 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:14 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:16 [info] [application] photo id after save is 64
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:16 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (296)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:16 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (297)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:16 [info] [application] inside menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (300)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:16 [info] [application] photo menu photo id 64
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (304)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:16 [info] [application] photo menu menu id 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (305)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:16 [info] [application] photo menu saved
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (308)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:49 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:49 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:51 [info] [application] photo id after save is 65
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:51 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (296)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:51 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (297)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:20:51 [info] [application] inside menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (300)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:21:19 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:21:19 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:21:23 [info] [application] photo id after save is 66
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:21:23 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (296)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:21:23 [info] [application] addphototoid is 3
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (297)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:21:23 [info] [application] inside menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (300)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:22:21 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:22:21 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:22:25 [info] [application] photo id after save is 67
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:22:25 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (296)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:22:25 [info] [application] addphototoid is 4
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (297)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:22:25 [info] [application] inside menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (300)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:25:38 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:25:38 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:25:54 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:25:54 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:26:00 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (295)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:26:00 [info] [application] addphototoid is 3
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (296)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:26:00 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (295)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:26:00 [info] [application] addphototoid is 3
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (296)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:26:30 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:26:30 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:31:10 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:31:10 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:32:12 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:32:12 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:32:13 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 10:32:13 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 17:13:28 [error] [exception.CException] exception 'CException' with message 'Property "LessCompiler.path" is not defined.' in /Applications/MAMP/framework/yii/1.1.12/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(222): CComponent->__set('path', Array)
+#1 /Applications/MAMP/framework/yii/1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Applications/MAMP/framework/yii/1.1.12/framework/base/CModule.php(493): CModule->getComponent('less')
+#3 /Applications/MAMP/framework/yii/1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Applications/M...')
+#5 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Applications/M...')
+#6 /Applications/MAMP/htdocs/restaurant/index.php(27): YiiBase::createWebApplication('/Applications/M...')
+#7 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2013/01/05 17:13:29 [error] [exception.CException] exception 'CException' with message 'Property "LessCompiler.path" is not defined.' in /Applications/MAMP/framework/yii/1.1.12/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(222): CComponent->__set('path', Array)
+#1 /Applications/MAMP/framework/yii/1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Applications/MAMP/framework/yii/1.1.12/framework/base/CModule.php(493): CModule->getComponent('less')
+#3 /Applications/MAMP/framework/yii/1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Applications/M...')
+#5 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Applications/M...')
+#6 /Applications/MAMP/htdocs/restaurant/index.php(27): YiiBase::createWebApplication('/Applications/M...')
+#7 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2013/01/05 17:21:38 [error] [exception.CException] exception 'CException' with message 'Property "LessCompiler.path" is not defined.' in /Applications/MAMP/framework/yii/1.1.12/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(222): CComponent->__set('path', Array)
+#1 /Applications/MAMP/framework/yii/1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Applications/MAMP/framework/yii/1.1.12/framework/base/CModule.php(493): CModule->getComponent('less')
+#3 /Applications/MAMP/framework/yii/1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Applications/M...')
+#5 /Applications/MAMP/framework/yii/1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Applications/M...')
+#6 /Applications/MAMP/htdocs/restaurant/index.php(27): YiiBase::createWebApplication('/Applications/M...')
+#7 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2013/01/05 17:24:53 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "registerCss".' in /Applications/MAMP/framework/yii/1.1.12/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('registerCss', Array)
+#1 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/main.php(12): Bootstrap->registerCss()
+#2 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="row...')
+#6 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="row...')
+#7 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(207): COutputProcessor->run()
+#8 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/column2.php(24): CBaseController->endContent()
+#10 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(127): require('/Applications/M...')
+#11 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#12 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#13 /Applications/MAMP/htdocs/restaurant/protected/controllers/BusinessController.php(88): CController->render('view', Array)
+#14 [internal function]: BusinessController->actionView('1')
+#15 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#16 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#17 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#24 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(283): CController->run('view')
+#26 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#27 /Applications/MAMP/framework/yii/1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#29 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2013/01/05 17:24:57 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "registerCss".' in /Applications/MAMP/framework/yii/1.1.12/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('registerCss', Array)
+#1 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/main.php(12): Bootstrap->registerCss()
+#2 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="row...')
+#6 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="row...')
+#7 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(207): COutputProcessor->run()
+#8 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/column2.php(24): CBaseController->endContent()
+#10 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(127): require('/Applications/M...')
+#11 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#12 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#13 /Applications/MAMP/htdocs/restaurant/protected/controllers/BusinessController.php(88): CController->render('view', Array)
+#14 [internal function]: BusinessController->actionView('1')
+#15 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#16 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#17 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#24 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(283): CController->run('view')
+#26 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#27 /Applications/MAMP/framework/yii/1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#29 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2013/01/05 17:27:23 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "registerCss".' in /Applications/MAMP/framework/yii/1.1.12/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('registerCss', Array)
+#1 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/main.php(12): Bootstrap->registerCss()
+#2 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="row...')
+#6 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="row...')
+#7 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(207): COutputProcessor->run()
+#8 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/column2.php(24): CBaseController->endContent()
+#10 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(127): require('/Applications/M...')
+#11 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#12 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#13 /Applications/MAMP/htdocs/restaurant/protected/controllers/BusinessController.php(88): CController->render('view', Array)
+#14 [internal function]: BusinessController->actionView('1')
+#15 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#16 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#17 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#24 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(283): CController->run('view')
+#26 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#27 /Applications/MAMP/framework/yii/1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#29 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2013/01/05 17:27:24 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "registerCss".' in /Applications/MAMP/framework/yii/1.1.12/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('registerCss', Array)
+#1 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/main.php(12): Bootstrap->registerCss()
+#2 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="row...')
+#6 /Applications/MAMP/framework/yii/1.1.12/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="row...')
+#7 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(207): COutputProcessor->run()
+#8 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 /Applications/MAMP/htdocs/restaurant/themes/bootstrap/views/layouts/column2.php(24): CBaseController->endContent()
+#10 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(127): require('/Applications/M...')
+#11 /Applications/MAMP/framework/yii/1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#12 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#13 /Applications/MAMP/htdocs/restaurant/protected/controllers/BusinessController.php(88): CController->render('view', Array)
+#14 [internal function]: BusinessController->actionView('1')
+#15 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(BusinessController), Array)
+#16 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(BusinessController), Object(ReflectionMethod), Array)
+#17 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#24 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(283): CController->run('view')
+#26 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('business/view')
+#27 /Applications/MAMP/framework/yii/1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#29 {main}
+REQUEST_URI=/restaurant/index.php?r=business/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php
+---
+2013/01/05 18:19:51 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 18:19:51 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 18:19:52 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.PHPThumb" is not defined.' in /Applications/MAMP/framework/yii/1.1.12/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/framework/yii/1.1.12/framework/base/CModule.php(106): CComponent->__get('PHPThumb')
+#1 /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php(228): CModule->__get('PHPThumb')
+#2 /Applications/MAMP/framework/yii/1.1.12/framework/web/actions/CInlineAction.php(50): PhotoController->actionUploadPhotos()
+#3 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/MAMP/framework/yii/1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#10 /Applications/MAMP/framework/yii/1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(283): CController->run('uploadPhotos')
+#12 /Applications/MAMP/framework/yii/1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('photo/uploadPho...')
+#13 /Applications/MAMP/framework/yii/1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#15 {main}
+REQUEST_URI=/restaurant/index.php?r=photo/uploadPhotos
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/05 18:20:32 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (166)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 18:20:32 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (167)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 18:20:56 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (296)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/05 18:20:56 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (297)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:49:48 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:49:48 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:49:50 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:49:50 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:50:33 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:50:33 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:50:35 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:50:35 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:54:12 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:54:12 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:54:25 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:54:25 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:54:31 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:54:31 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:54:35 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:54:35 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:55:02 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:55:02 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:55:15 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:55:15 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:55:33 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:55:33 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:59:13 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:59:13 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:59:35 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 08:59:35 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:03:08 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:03:08 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:03:24 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:03:24 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:11:23 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:11:23 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:11:27 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:11:27 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:13:33 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:13:33 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:13:50 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:13:50 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:15:35 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:15:35 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:15:42 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:15:42 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:17:08 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:17:08 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:17:46 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:17:46 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:17:52 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:17:52 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:21:05 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:21:05 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:24:24 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:24:24 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:29:05 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:29:05 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:29:08 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:29:08 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:29:25 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:29:25 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:29:29 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:29:29 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:33:48 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:33:48 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:02 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:02 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:08 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:08 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:11 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:11 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:27 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:27 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:30 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:34:30 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:36:55 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:36:55 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:36:58 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:36:58 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:38:06 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:38:06 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:38:09 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:38:09 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:38:35 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:38:35 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:38:37 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:38:37 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:39:11 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:39:11 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:39:15 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:39:15 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:39:44 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:39:44 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:39:46 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:39:46 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:40:16 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:40:16 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:40:22 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:40:22 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:40:40 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:40:40 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:40:44 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:40:44 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:41:00 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:41:00 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:41:26 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:41:26 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:42:19 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:42:19 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:42:24 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:42:24 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:43:14 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:43:14 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:51:17 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:51:17 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:51:21 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/06 09:51:21 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:38:58 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:38:58 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:03 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:03 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:28 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:28 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:32 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:32 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:43 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:43 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:45 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:39:45 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:40:39 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:40:39 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:40:47 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:40:47 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:41:01 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:41:01 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:41:05 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:41:05 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:41:21 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:41:21 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:41:56 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:41:56 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:42:49 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:42:49 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:44:22 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:44:22 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:44:26 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:44:26 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:44:46 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:44:46 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:45:17 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:45:17 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:46:48 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:46:48 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:47:26 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:47:26 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:48:32 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:48:32 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:48:38 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:48:38 [info] [application] addphototoid is 3
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:49:25 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:49:25 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:49:32 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:49:32 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:54:20 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:54:20 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:54:22 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:54:22 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:54:25 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:54:25 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:54:26 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:54:26 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:55:03 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:55:03 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:55:05 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:55:05 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:55:09 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:55:09 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:55:10 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:55:10 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:09 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:09 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:11 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:11 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:13 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:13 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:15 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:15 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:15 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:15 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:17 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 08:56:17 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:00:17 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:00:17 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:00:20 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:00:20 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:19 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:19 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:28 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:28 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:45 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:45 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:52 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:52 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:56 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:16:56 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:17:01 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:17:01 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:17:06 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:17:06 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:17:07 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:17:07 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:18:09 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:18:09 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:18:25 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:18:25 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:14 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:14 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:21 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:21 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:26 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:26 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:29 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:29 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:35 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:35 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:38 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:19:38 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:21:55 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:21:55 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:00 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:00 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:06 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:06 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:11 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:11 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:26 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:26 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:28 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:28 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:37 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:37 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:45 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:45 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:50 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:50 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:55 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:22:55 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:01 [info] [application] Path value is /Applications/MAMP/htdocs/restaurant/images/tmp/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (164)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:01 [info] [application] thumbsPath value is /Applications/MAMP/htdocs/restaurant/images/tmp/thumbs/
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (165)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [warning] [application] /Applications/MAMP/htdocs/restaurant/images/tmp/b7dfa7602b54b5674e9a7b461c10a326.JPG is not a file
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (191)
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (148)
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (285)
+2013/01/07 09:23:04 [warning] [application] /Applications/MAMP/htdocs/restaurant/images/tmp/f5897f78a812872fae61a25d7b29c43e.JPG is not a file
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (191)
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (148)
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (285)
+2013/01/07 09:23:04 [warning] [application] /Applications/MAMP/htdocs/restaurant/images/tmp/5d16d04b233cc6d247c0f7b041b873f2.JPG is not a file
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (191)
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (148)
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (285)
+2013/01/07 09:23:04 [warning] [application] /Applications/MAMP/htdocs/restaurant/images/tmp/e94466a7676aa7e82d45afc9cc16ed21.JPG is not a file
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (191)
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (148)
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (285)
+2013/01/07 09:23:04 [warning] [application] /Applications/MAMP/htdocs/restaurant/images/tmp/48cf5f0095870140b87586a199bef29e.JPG is not a file
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (191)
+in /Applications/MAMP/htdocs/restaurant/protected/models/Photo.php (148)
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (285)
+2013/01/07 09:23:04 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphotototype is menu
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (290)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:23:04 [info] [application] addphototoid is 1
+in /Applications/MAMP/htdocs/restaurant/protected/controllers/PhotoController.php (291)
+in /Applications/MAMP/htdocs/restaurant/index.php (27)
+2013/01/07 09:25:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view2".' in /Applications/MAMP/framework/yii/1.1.13/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/yii/1.1.13/framework/web/CController.php(270): CController->missingAction('view2')
+#1 /Applications/MAMP/framework/yii/1.1.13/framework/web/CWebApplication.php(282): CController->run('view2')
+#2 /Applications/MAMP/framework/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('menu/view2')
+#3 /Applications/MAMP/framework/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=menu/view2&id=3
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=3
+---
+2013/01/07 09:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view2".' in /Applications/MAMP/framework/yii/1.1.13/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/yii/1.1.13/framework/web/CController.php(270): CController->missingAction('view2')
+#1 /Applications/MAMP/framework/yii/1.1.13/framework/web/CWebApplication.php(282): CController->run('view2')
+#2 /Applications/MAMP/framework/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('menu/view2')
+#3 /Applications/MAMP/framework/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/restaurant/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/restaurant/index.php?r=menu/view2&id=3
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=3
+---

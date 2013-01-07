@@ -3,39 +3,38 @@
 /* @var $model Menu */
 
 $this->breadcrumbs=array(
-	'Menus'=>array('index', 'bid'=>$model->business_id),
-	$model->name,
+    'Menus'=>array('index', 'bid'=>$model->business_id),
+    $model->name,
 );
 
 $this->menu=array(
-	array('label'=>'List Menu', 'url'=>array('index', 'bid'=>$model->business_id)),
-	array('label'=>'Create Menu', 'url'=>array('create', 'bid'=>$model->business_id)),
-	array('label'=>'Update Menu', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Menu', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Menu', 'url'=>array('admin')),
+    array('label'=>'List Menu', 'url'=>array('index', 'bid'=>$model->business_id)),
+    array('label'=>'Create Menu', 'url'=>array('create', 'bid'=>$model->business_id)),
+    array('label'=>'Update Menu', 'url'=>array('update', 'id'=>$model->id)),
+    array('label'=>'Delete Menu', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+    array('label'=>'Manage Menu', 'url'=>array('admin')),
 );
 ?>
 
 <h1>Menu: <?php echo $model->name; ?></h1>
 
 <?php $this->widget('bootstrap.widgets.TbDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'business_id',
-		array(
-			'name'=>'Category',
-			'value'=>$model->getCategoryText(),
-		),
-		'name',
-		'description',
-		'price',
-		'status',
-		'update_date',
-		'create_date',
-	),
+    'data'=>$model,
+    'attributes'=>array(
+        'id',
+        'business_id',
+        array(
+            'name'=>'Category',
+            'value'=>$model->getCategoryText(),
+        ),
+        'name',
+        'description',
+        'price',
+        'status',
+        'update_date',
+        'create_date',
+    ),
 )); ?>
-
 
 
 <?php
@@ -50,6 +49,17 @@ $this->widget('bootstrap.widgets.TbButton', array(
     ),
 ));
 ?>
+
+<?php
+    // Declare Post Photo URL
+    $menuUrl = Yii::app()->createUrl("photo/postPhotos", array("bid"=>$model->business_id));
+?>
+
+<script>
+    // Declare Post Photo URL
+    var menuUrl = "<?php echo $menuUrl; ?>";
+    var photoCounter = 0;
+</script>
 
 <?php
 $this->beginWidget('bootstrap.widgets.TbModal',
@@ -78,28 +88,7 @@ $this->beginWidget('bootstrap.widgets.TbModal',
         <div>
             <?php
             $this->widget('xupload.XUpload', array(
-                // --------------------------------
-                // Backup
-                // --------------------------------
-                // 'url' => Yii::app()->createUrl("/photo/uploadPhotos"),
-                // //our XUploadForm
-                // 'model' => $photos,
-                // //We set this for the widget to be able to target our own form
-                // 'htmlOptions' => array('id'=>'upload-photos-form', "class"=>"span7"),
-                // 'attribute' => 'file',
-                // 'multiple' => true,
-                // //Note that we are using a custom view for our widget
-                // //Thats becase the default widget includes the 'form'
-                // //which we don't want here
-                // 'formView' => 'application.views.photo.xup',
-                // 'options' => array(
-                //     'maxNumberOfFiles'=>2,
-                //     'maxFileSize'=>10000000,
-                //     'acceptFileTypes' => "js:/(\.|\/)(jpe?g|png)$/i",
-                // ),
-
-                'url' => Yii::app()->createUrl("photo/postPhotos"),
-                //our XUploadForm
+                'url' => Yii::app()->createUrl("photo/uploadPhotos"),
                 'model' => $photos,
                 //We set this for the widget to be able to target our own form
                 'htmlOptions' => array('id'=>'upload-photos-form', "class"=>"span7"),
@@ -111,14 +100,31 @@ $this->beginWidget('bootstrap.widgets.TbModal',
                 'uploadView' => 'application.views.photo.upload',
                 'downloadView' => 'application.views.photo.download',
                 'options' => array(
-                    'maxNumberOfFiles'=>2,
+                    'maxNumberOfFiles'=>5,
+                    'singleFileUploads'=>'true',
                     'maxFileSize'=>10000000,
+                    'previewSourceMaxFileSize'=>5000000,
                     'acceptFileTypes' => "js:/(\.|\/)(jpe?g|png)$/i",
                     'submit' => "js:function (e, data) {
                         var inputs = data.context.find(':input');
                         data.formData = inputs.serializeArray();
                         return true;
                     }",
+                    'destroyed'=>'js:function(event, files, index, xhr, handler) {
+                        photoCounter--;
+                        if(photoCounter < 1) {
+                            $("#post").addClass("disabled");
+                            $("#post").attr("href", "#");
+                        }
+                        
+                    }',
+                    'completed'=>'js:function(event, files, index, xhr, handler) {
+                        photoCounter++;
+                        if(photoCounter > 0) {
+                            $("#post").removeClass("disabled");
+                            $("#post").attr("href", menuUrl);
+                        }                
+                    }',
                 ),
             ));
             ?>
@@ -129,10 +135,19 @@ $this->beginWidget('bootstrap.widgets.TbModal',
 
 <div class="modal-footer">
     <?php $this->widget('bootstrap.widgets.TbButton', array(
-        'label'=>'Close',
+        'type'=>'submit',
+        'label'=>'Post Photos',
         'url'=>'#',
         'htmlOptions'=>array(
-            'data-dismiss'=>'modal',
+            'class'=>'disabled',
+            'id'=>'post',
+        ),
+    )); ?>
+    <?php $this->widget('bootstrap.widgets.TbButton', array(
+        'label'=>'Close',
+        'url'=>Yii::app()->createUrl("menu/view", array("id"=>$model->id)),
+        'htmlOptions'=>array(
+            
         ),
     )); ?>
 </div>

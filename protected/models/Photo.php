@@ -128,4 +128,73 @@ class Photo extends CActiveRecord
 
 		return parent::beforeValidate();
 	}
+
+	/**
+     * Prepares user_id attributes before performing save.
+     */
+	protected function beforeSave()
+	{
+		$this->user_id = Yii::app()->user->id;
+		$this->create_date = new CDbExpression('NOW()');
+
+		return parent::beforeSave();
+	}
+
+	/**
+	* Save images as user post photos
+	*/
+	protected function afterSave()
+	{
+		$this->saveImages();
+		parent::afterSave();
+	}
+
+	/**
+	* move photos to its respective folders
+	*/
+	public function saveImages()
+	{
+		// Check if we have pending images
+		if(Yii::app()->user->hasState('images')) {
+			$userImages = Yii::app()->user->getState('images');
+
+			// Resolve the final path for our images
+			$addPhotosTo = Yii::app()->user->getState('addPhotosTo');
+            $addPhotosToType = $addPhotosTo[0];
+            $addPhotosToId = $addPhotosTo[1];
+			$path = Yii::app()->getBasePath() . "/../images/menus/{$addPhotosToId}/";
+			$thumbsPath = Yii::app()->getBasePath() . "/../images/menus/{$addPhotosToId}/thumbs/";
+
+			// --------------------------
+            // Check and create directories
+            // --------------------------
+            if(!is_dir($path)) {
+                mkdir($path, 0777, true);
+                chmod ($path , 0777);
+            }
+            if(!is_dir($thumbsPath)) {
+                mkdir($thumbsPath, 0777, true);
+                chmod ($thumbsPath , 0777);
+            }
+
+            // Create corresponding models and move the files
+            foreach($userImages as $image) {
+            	if(is_file($image["path"])) {
+            		if(rename($image["path"], $path.$image["filename"])) {
+            			chmod($path.$image["filename"], 0777);
+            		}
+            		if(rename($image["thumb"], $thumbsPath.$image["filename"])) {
+            			chmod($thumbsPath.$image["filename"], 0777);
+            		}
+            	} else {
+            		// throw exception here to rollback the transaction
+            		Yii::log($image["path"] . " is not a file", CLogger::LEVEL_WARNING);
+            	}
+            }
+
+            // Clear the user's session
+            Yii::app()->user->setState('images', null);
+            //Yii::app()->user->setState('addPhotosTo', null);
+		}
+	}
 }

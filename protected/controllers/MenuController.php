@@ -75,7 +75,6 @@ class MenuController extends Controller
 
 	public function actionView($id)
 	{
-        Yii::import( "xupload.models.XUploadForm" );
         $photos = new Photo;
 
         //Clear the user's session
