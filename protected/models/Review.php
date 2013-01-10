@@ -7,14 +7,36 @@
  * @property integer $id
  * @property integer $user_id
  * @property integer $business_id
- * @property string $title
  * @property string $description
  * @property double $rating
+ * @property double $rating2
+ * @property double $rating3
+ * @property double $rating4
+ * @property string $source
+ * @property integer $price
+ * @property integer $ambience
+ * @property string $noise_level
+ * @property string $parking
+ * @property string $good_type_meal
+ * @property string $groups_option
+ * @property string $kids_option
+ * @property string $delivery
+ * @property string $reservation
+ * @property string $credit_cards
+ * @property string $take_out
+ * @property string $waiter_service
+ * @property string $outdoor_seating
+ * @property string $wifi
+ * @property string $alcohol
+ * @property string $tv
+ * @property string $cater
  * @property string $create_date
  *
  * The followings are the available model relations:
- * @property Business $business
  * @property User $user
+ * @property Business $business
+ * @property User $userPriceType $price
+ * @property AmbienceType $ambience
  */
 class Review extends CActiveRecord
 {
@@ -52,13 +74,13 @@ class Review extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, description, rating', 'required'),
-			array('user_id, business_id', 'numerical', 'integerOnly'=>true),
-			array('rating', 'numerical'),
-			array('title', 'length', 'max'=>100),
+			array('user_id, business_id, description, rating, rating2, rating3, rating4, price, ambience, create_date', 'required'),
+			array('user_id, business_id, price, ambience', 'numerical', 'integerOnly'=>true),
+			array('rating, rating2, rating3, rating4', 'numerical'),
+			array('source, noise_level, parking, good_type_meal, groups_option, kids_option, delivery, reservation, credit_cards, take_out, waiter_service, outdoor_seating, wifi, alcohol, tv, cater', 'length', 'max'=>3),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, user_id, business_id, title, description, rating, create_date', 'safe', 'on'=>'search'),
+			array('id, user_id, business_id, description, rating, rating2, rating3, rating4, source, price, ambience, noise_level, parking, good_type_meal, groups_option, kids_option, delivery, reservation, credit_cards, take_out, waiter_service, outdoor_seating, wifi, alcohol, tv, cater, create_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -72,6 +94,8 @@ class Review extends CActiveRecord
 		return array(
 			'business' => array(self::BELONGS_TO, 'Business', 'business_id'),
 			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
+			'price' => array(self::BELONGS_TO, 'PriceType', 'price'),
+			'ambience' => array(self::BELONGS_TO, 'AmbienceType', 'ambience'),
 		);
 	}
 
@@ -84,9 +108,29 @@ class Review extends CActiveRecord
 			'id' => 'ID',
 			'user_id' => 'User',
 			'business_id' => 'Business',
-			'title' => 'Title',
 			'description' => 'Description',
-			'rating' => 'Rating',
+			'rating' => 'Dish Rating',
+			'rating2' => 'Ambience Rating',
+			'rating3' => 'Service Rating',
+			'rating4' => 'Overall Rating',
+			'source' => 'Source',
+			'price' => 'Price',
+			'ambience' => 'Ambience',
+			'noise_level' => 'Noise Level',
+			'parking' => 'Parking',
+			'good_type_meal' => 'Good Type Meal',
+			'groups_option' => 'Groups Option',
+			'kids_option' => 'Kids Option',
+			'delivery' => 'Delivery',
+			'reservation' => 'Reservation',
+			'credit_cards' => 'Credit Cards',
+			'take_out' => 'Take Out',
+			'waiter_service' => 'Waiter Service',
+			'outdoor_seating' => 'Outdoor Seating',
+			'wifi' => 'Wifi',
+			'alcohol' => 'Alcohol',
+			'tv' => 'Tv',
+			'cater' => 'Cater',
 			'create_date' => 'Create Date',
 		);
 	}
@@ -105,9 +149,29 @@ class Review extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('business_id',$this->business_id);
-		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('rating',$this->rating);
+		$criteria->compare('rating2',$this->rating2);
+		$criteria->compare('rating3',$this->rating3);
+		$criteria->compare('rating4',$this->rating4);
+		$criteria->compare('source',$this->source,true);
+		$criteria->compare('price',$this->price);
+		$criteria->compare('ambience',$this->ambience);
+		$criteria->compare('noise_level',$this->noise_level,true);
+		$criteria->compare('parking',$this->parking,true);
+		$criteria->compare('good_type_meal',$this->good_type_meal,true);
+		$criteria->compare('groups_option',$this->groups_option,true);
+		$criteria->compare('kids_option',$this->kids_option,true);
+		$criteria->compare('delivery',$this->delivery,true);
+		$criteria->compare('reservation',$this->reservation,true);
+		$criteria->compare('credit_cards',$this->credit_cards,true);
+		$criteria->compare('take_out',$this->take_out,true);
+		$criteria->compare('waiter_service',$this->waiter_service,true);
+		$criteria->compare('outdoor_seating',$this->outdoor_seating,true);
+		$criteria->compare('wifi',$this->wifi,true);
+		$criteria->compare('alcohol',$this->alcohol,true);
+		$criteria->compare('tv',$this->tv,true);
+		$criteria->compare('cater',$this->cater,true);
 		$criteria->compare('create_date',$this->create_date,true);
 
 		return new CActiveDataProvider($this, array(

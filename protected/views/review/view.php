@@ -24,7 +24,6 @@ $this->menu=array(
 		'id',
 		'user_id',
 		'business_id',
-		'title',
 		'description',
 		'rating',
 		'create_date',

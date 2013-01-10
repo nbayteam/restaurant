@@ -14,12 +14,16 @@
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
+
 	<?php echo $form->errorSummary($model); ?>
 
 	<?php echo $form->hiddenField($model,'business_id'); ?>
-	<?php echo $form->textFieldRow($model,'title',array('class'=>'span6','size'=>60,'maxlength'=>100)); ?>
-	<?php echo $form->textAreaRow($model,'description',array('class'=>'span6','rows'=>7, 'cols'=>60)); ?>
 	<?php echo $form->dropDownListRow($model,'rating',$model->getRatingOption()); ?>
+	<?php echo $form->dropDownListRow($model,'rating2',$model->getRatingOption()); ?>
+	<?php echo $form->dropDownListRow($model,'rating3',$model->getRatingOption()); ?>
+	<?php echo $form->dropDownListRow($model,'rating4',$model->getRatingOption()); ?>
+	<?php echo $form->textAreaRow($model,'description',array('class'=>'span6','rows'=>7, 'cols'=>60)); ?>
+	
 	
 	<div class="row buttons">
 		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

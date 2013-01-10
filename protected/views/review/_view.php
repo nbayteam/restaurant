@@ -13,10 +13,6 @@
 	<?php echo CHtml::encode($profile->first_name) . " " . CHtml::encode($profile->last_name); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
-	<?php echo CHtml::encode($data->title); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
 	<?php echo CHtml::encode($data->description); ?>
 	<br />

@@ -144,7 +144,7 @@ $this->beginWidget('bootstrap.widgets.TbModal',
         ),
     )); ?>
     <?php $this->widget('bootstrap.widgets.TbButton', array(
-        'label'=>'Close',
+        'label'=>'Cancel',
         'url'=>Yii::app()->createUrl("menu/view", array("id"=>$model->id)),
         'htmlOptions'=>array(
             

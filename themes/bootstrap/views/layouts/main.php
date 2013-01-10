@@ -9,26 +9,23 @@
     <meta name="author" content="">
 
     <!-- blueprint CSS framework -->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-    <![endif]-->
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
+   <!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
+   <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
+   <?php Yii::app()->bootstrap->registerCoreCss(); ?>
+   <?php Yii::app()->bootstrap->registerCoreScripts(); ?>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/css/bootstrap-modal.css" />
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/js/bootstrap-modal.js"></script>
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/js/bootstrap-modalmanager.js"></script>
- 
-
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" />
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/css/bootstrap-modal.css" />
+   <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/js/bootstrap-modal.js"></script>
+   <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/js/bootstrap-modalmanager.js"></script>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
-
-	<?php Yii::app()->bootstrap->registerCoreCss(); ?>
 </head>
 
 <body>
