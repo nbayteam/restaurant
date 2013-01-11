@@ -1810,3 +1810,1041 @@ REQUEST_URI=/restaurant/index.php?r=review/create&bid=1
 in /Applications/MAMP/htdocs/restaurant/protected/extensions/bootstrap/widgets/input/TbInput.php (245)
 in /Applications/MAMP/htdocs/restaurant/protected/extensions/bootstrap/widgets/input/TbInputHorizontal.php (39)
 in /Applications/MAMP/htdocs/restaurant/protected/extensions/bootstrap/widgets/input/TbInputHorizontal.php (165)
+2013/01/11 15:36:24 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 15:36:24 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (165)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 15:36:24 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 15:36:24 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (165)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 15:36:34 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (289)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 15:36:34 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (290)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 15:36:34 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (289)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 15:36:34 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (290)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:08:44 [error] [php] Array to string conversion (/Users/niko/Documents/yii_project/restaurant/protected/views/menu/view.php:59)
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CController.php(869): MenuController->renderFile()
+#1 /Users/niko/source/yii/1.1.13/framework/web/CController.php(782): MenuController->renderPartial()
+#2 /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php(72): MenuController->render()
+#3 unknown(0): MenuController->actionView()
+#4 /Users/niko/source/yii/1.1.13/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Users/niko/source/yii/1.1.13/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Users/niko/source/yii/1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(133): MenuController->runAction()
+#8 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): MenuController->filterAccessControl()
+#11 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#13 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): MenuController->runActionWithFilters()
+#14 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): MenuController->run()
+#15 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=menu/view&id=1
+in /Users/niko/Documents/yii_project/restaurant/protected/views/menu/view.php (59)
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php (72)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:09:02 [error] [php] Object of class PhotosMenu could not be converted to string (/Users/niko/Documents/yii_project/restaurant/protected/views/menu/view.php:59)
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CController.php(869): MenuController->renderFile()
+#1 /Users/niko/source/yii/1.1.13/framework/web/CController.php(782): MenuController->renderPartial()
+#2 /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php(72): MenuController->render()
+#3 unknown(0): MenuController->actionView()
+#4 /Users/niko/source/yii/1.1.13/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Users/niko/source/yii/1.1.13/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Users/niko/source/yii/1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(133): MenuController->runAction()
+#8 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): MenuController->filterAccessControl()
+#11 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#13 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): MenuController->runActionWithFilters()
+#14 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): MenuController->run()
+#15 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=menu/view&id=1
+in /Users/niko/Documents/yii_project/restaurant/protected/views/menu/view.php (59)
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php (72)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:57:25 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:57:25 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (165)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:57:27 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (289)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:57:27 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (290)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:57:55 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:57:55 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (165)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:57:57 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (289)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:57:57 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (290)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:59:20 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:59:20 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (165)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:59:21 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:59:21 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (165)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:59:29 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 16:59:29 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (165)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 17:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "restaurant/index.php?r=photo/removePhoto".' in /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('restaurant/inde...')
+#1 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 17:43:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "restaurant/index.php?r=photo/removePhoto".' in /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('restaurant/inde...')
+#1 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 17:47:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "restaurant/index.php?r=photo/removePhoto".' in /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('restaurant/inde...')
+#1 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 17:49:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "restaurant/index.php?r=photo/removePhoto".' in /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('restaurant/inde...')
+#1 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 17:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "restaurant/index.php?r=photo/removePhoto".' in /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('restaurant/inde...')
+#1 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 17:52:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "http://localhost:8888/restaurant/index.php?r=photo/removePhoto".' in /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('http://localhos...')
+#1 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=http://localhost:8888/restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 17:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "restaurant/index.php?r=photo/removePhoto".' in /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('restaurant/inde...')
+#1 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 17:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "restaurant/index.php?r=photo/removePhoto".' in /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('restaurant/inde...')
+#1 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/restaurant/index.php?r=restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 18:04:23 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:05:34 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:05:34 [info] [application] if 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (154)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:05:34 [info] [application] if 2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:06:29 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:06:29 [info] [application] if 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (154)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:06:29 [info] [application] if 2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:07:10 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:07:10 [info] [application] if 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (154)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:07:10 [info] [application] if 2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:07:11 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:07:11 [info] [application] if 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (154)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:07:11 [info] [application] if 2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:10:59 [error] [exception.CException] exception 'CException' with message 'Property "TbButton.fn" is not defined.' in /Users/niko/source/yii/1.1.13/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CWidgetFactory.php(161): CComponent->__set('fn', 'ajax')
+#1 /Users/niko/source/yii/1.1.13/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(MenuController), 'bootstrap.widge...', Array)
+#2 /Users/niko/source/yii/1.1.13/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /Users/niko/Documents/yii_project/restaurant/protected/views/menu/view.php(111): CBaseController->widget('bootstrap.widge...', Array)
+#4 /Users/niko/source/yii/1.1.13/framework/web/CBaseController.php(126): require('/Users/niko/Doc...')
+#5 /Users/niko/source/yii/1.1.13/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/niko/Doc...', Array, true)
+#6 /Users/niko/source/yii/1.1.13/framework/web/CController.php(869): CBaseController->renderFile('/Users/niko/Doc...', Array, true)
+#7 /Users/niko/source/yii/1.1.13/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#8 /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php(72): CController->render('view', Array)
+#9 [internal function]: MenuController->actionView('1')
+#10 /Users/niko/source/yii/1.1.13/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(MenuController), Array)
+#11 /Users/niko/source/yii/1.1.13/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MenuController), Object(ReflectionMethod), Array)
+#12 /Users/niko/source/yii/1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): CController->run('view')
+#21 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('menu/view')
+#22 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#24 {main}
+REQUEST_URI=/restaurant/index.php?r=menu/view&id=1
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 18:15:13 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:15:13 [info] [application] if 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (154)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:15:13 [info] [application] if 2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:15:33 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:15:33 [info] [application] if 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (154)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:15:33 [info] [application] if 2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:15:40 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:15:40 [info] [application] if 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (154)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:15:40 [info] [application] if 2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:22:30 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:22:30 [info] [application] if 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (154)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:22:30 [info] [application] if 2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:25:35 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:25:35 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (155)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:25:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`restaurant`.`tbl_photos_menu`, CONSTRAINT `tbl_photos_menu_ibfk_2` FOREIGN KEY (`photo_id`) REFERENCES `tbl_photo` (`id`) ON UPDATE CASCADE). The SQL statement executed was: DELETE FROM `tbl_photo` WHERE `tbl_photo`.`id`=67.
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (159)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:25:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`restaurant`.`tbl_photos_menu`, CONSTRAINT `tbl_photos_menu_ibfk_2` FOREIGN KEY (`photo_id`) REFERENCES `tbl_photo` (`id`) ON UPDATE CASCADE). The SQL statement executed was: DELETE FROM `tbl_photo` WHERE `tbl_photo`.`id`=67' in /Users/niko/source/yii/1.1.13/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/db/ar/CActiveRecord.php(1745): CDbCommand->execute()
+#1 /Users/niko/source/yii/1.1.13/framework/db/ar/CActiveRecord.php(1168): CActiveRecord->deleteByPk('67')
+#2 /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php(159): CActiveRecord->delete()
+#3 /Users/niko/source/yii/1.1.13/framework/web/actions/CInlineAction.php(49): PhotoController->actionRemovePhoto()
+#4 /Users/niko/source/yii/1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): CController->run('removePhoto')
+#13 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('photo/removePho...')
+#14 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#16 {main}
+REQUEST_URI=/restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 18:26:23 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:26:23 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (155)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:26:23 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (160)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:27:58 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:27:58 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (155)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:27:58 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (160)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:27:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`restaurant`.`tbl_photos_menu`, CONSTRAINT `tbl_photos_menu_ibfk_2` FOREIGN KEY (`photo_id`) REFERENCES `tbl_photo` (`id`) ON UPDATE CASCADE). The SQL statement executed was: DELETE FROM `tbl_photo` WHERE `tbl_photo`.`id`=67.
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:27:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`restaurant`.`tbl_photos_menu`, CONSTRAINT `tbl_photos_menu_ibfk_2` FOREIGN KEY (`photo_id`) REFERENCES `tbl_photo` (`id`) ON UPDATE CASCADE). The SQL statement executed was: DELETE FROM `tbl_photo` WHERE `tbl_photo`.`id`=67' in /Users/niko/source/yii/1.1.13/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/db/ar/CActiveRecord.php(1745): CDbCommand->execute()
+#1 /Users/niko/source/yii/1.1.13/framework/db/ar/CActiveRecord.php(1168): CActiveRecord->deleteByPk('67')
+#2 /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php(162): CActiveRecord->delete()
+#3 /Users/niko/source/yii/1.1.13/framework/web/actions/CInlineAction.php(49): PhotoController->actionRemovePhoto()
+#4 /Users/niko/source/yii/1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): CController->run('removePhoto')
+#13 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('photo/removePho...')
+#14 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#16 {main}
+REQUEST_URI=/restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 18:28:37 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:28:37 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (155)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:28:37 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (160)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:28:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`restaurant`.`tbl_photos_menu`, CONSTRAINT `tbl_photos_menu_ibfk_2` FOREIGN KEY (`photo_id`) REFERENCES `tbl_photo` (`id`) ON UPDATE CASCADE). The SQL statement executed was: DELETE FROM `tbl_photo` WHERE `tbl_photo`.`id`=67.
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:28:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`restaurant`.`tbl_photos_menu`, CONSTRAINT `tbl_photos_menu_ibfk_2` FOREIGN KEY (`photo_id`) REFERENCES `tbl_photo` (`id`) ON UPDATE CASCADE). The SQL statement executed was: DELETE FROM `tbl_photo` WHERE `tbl_photo`.`id`=67' in /Users/niko/source/yii/1.1.13/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/db/ar/CActiveRecord.php(1745): CDbCommand->execute()
+#1 /Users/niko/source/yii/1.1.13/framework/db/ar/CActiveRecord.php(1168): CActiveRecord->deleteByPk('67')
+#2 /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php(162): CActiveRecord->delete()
+#3 /Users/niko/source/yii/1.1.13/framework/web/actions/CInlineAction.php(49): PhotoController->actionRemovePhoto()
+#4 /Users/niko/source/yii/1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): CController->run('removePhoto')
+#13 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('photo/removePho...')
+#14 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#16 {main}
+REQUEST_URI=/restaurant/index.php?r=photo/removePhoto
+HTTP_REFERER=http://localhost:8888/restaurant/index.php?r=menu/view&id=1
+---
+2013/01/11 18:33:42 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:33:42 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:33:42 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:38:24 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:38:24 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:38:24 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:38:56 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:38:56 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:38:56 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:39:42 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:39:42 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:39:42 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:39:42 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:43:37 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:43:37 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:43:37 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:43:37 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:43:37 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested business does not exist.' in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php:220
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php(240): MenuController->loadBusiness(NULL)
+#1 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): MenuController->filterBusinessContext(Object(CFilterChain))
+#2 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#8 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): CController->run('')
+#10 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('menu/')
+#11 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#13 {main}
+REQUEST_URI=/restaurant/index.php?r=menu/
+---
+2013/01/11 18:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested business does not exist.' in /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php:220
+Stack trace:
+#0 /Users/niko/Documents/yii_project/restaurant/protected/controllers/MenuController.php(240): MenuController->loadBusiness(NULL)
+#1 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): MenuController->filterBusinessContext(Object(CFilterChain))
+#2 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#8 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): CController->run('')
+#10 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('menu')
+#11 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /Users/niko/Documents/yii_project/restaurant/index.php(27): CApplication->run()
+#13 {main}
+REQUEST_URI=/restaurant/index.php?r=menu
+---
+2013/01/11 18:52:05 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:05 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:05 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:05 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:05 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:29 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (199)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:29 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (200)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:29 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (199)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:29 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (200)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:31 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (324)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:31 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (325)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:31 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (324)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:31 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (325)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:43 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:43 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:43 [info] [application] pic5
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:43 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:52:43 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:28 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:28 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:28 [info] [application] pic6
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:28 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:28 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:54 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (199)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:54 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (200)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:54 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (199)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:54 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (200)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:56 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (324)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:56 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (325)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:56 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (324)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:56 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (325)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:59 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:59 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:59 [info] [application] pic3
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:59 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:53:59 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:01 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:01 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:01 [info] [application] pic4
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:01 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:01 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:18 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (199)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:18 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (200)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:19 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (199)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:19 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (200)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:21 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (324)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:21 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (325)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:21 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (324)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:21 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (325)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:26 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:26 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:26 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:26 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:26 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:28 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:28 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:28 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:28 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:28 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:36 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:36 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:36 [info] [application] pic1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:36 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:36 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:37 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:37 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:37 [info] [application] pic2
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (161)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:37 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (164)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 18:54:37 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (170)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:23 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (215)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:23 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (216)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:23 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (215)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:23 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (216)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:25 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (340)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:26 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (341)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:26 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (340)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:26 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (341)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:28 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:28 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:28 [info] [application] pic0
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:28 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:09:28 [error] [php] unlink(/Users/niko/Documents/yii_project/restaurant/images/menus6c436b131ccf43d89429fdaa25a4364b.jpg): No such file or directory (/Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php:176)
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(133): PhotoController->runAction()
+#2 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): PhotoController->filterAccessControl()
+#5 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): PhotoController->runActionWithFilters()
+#8 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): PhotoController->run()
+#9 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=photo/removePhoto
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (176)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:10:48 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:10:48 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:10:48 [info] [application] pic1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:10:48 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:10:48 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/images/menus98391f41b8e8ce24ef58e969b99d9947.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (177)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:10:48 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/images/menus1/thumbs/menus98391f41b8e8ce24ef58e969b99d9947.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (178)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:10:48 [error] [php] Undefined variable: success (/Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php:180)
+Stack trace:
+#0 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(133): PhotoController->runAction()
+#1 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /Users/niko/source/yii/1.1.13/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /Users/niko/source/yii/1.1.13/framework/web/filters/CInlineFilter.php(58): PhotoController->filterAccessControl()
+#4 /Users/niko/source/yii/1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /Users/niko/source/yii/1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/niko/source/yii/1.1.13/framework/web/CController.php(265): PhotoController->runActionWithFilters()
+#7 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(282): PhotoController->run()
+#8 /Users/niko/source/yii/1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/niko/source/yii/1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/niko/Documents/yii_project/restaurant/index.php(27): CWebApplication->run()
+REQUEST_URI=/restaurant/index.php?r=photo/removePhoto
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (180)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:09 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (224)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:09 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (225)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:10 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (224)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:10 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (225)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:12 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (349)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:12 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (350)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:12 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (349)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:12 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (350)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:15 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:15 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:15 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:15 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:15 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/images/menus169c7540fdfc3f46dee27cd47e79b0672.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (177)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:15 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/images/menus1/thumbs/menus169c7540fdfc3f46dee27cd47e79b0672.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (178)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:18:15 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (195)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:19:33 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:19:33 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:19:33 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:19:33 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:19:33 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/images/menus/169c7540fdfc3f46dee27cd47e79b0672.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (177)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:19:33 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/images/menus/1/thumbs169c7540fdfc3f46dee27cd47e79b0672.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (178)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:19:33 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (195)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:21:10 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:21:10 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:21:10 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:21:10 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:21:10 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/images/menus/169c7540fdfc3f46dee27cd47e79b0672.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (177)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:21:10 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/images/menus/1/thumbs69c7540fdfc3f46dee27cd47e79b0672.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (178)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:21:10 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (195)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:25:50 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:25:50 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:25:50 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:25:50 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:25:50 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/69c7540fdfc3f46dee27cd47e79b0672.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (179)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:25:50 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/thumbs/69c7540fdfc3f46dee27cd47e79b0672.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (180)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:25:50 [info] [application] removed files
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (187)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:25:50 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (197)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:26:47 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (226)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:26:47 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (227)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:26:48 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (226)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:26:48 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (227)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:26:50 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (351)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:26:50 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (352)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:26:50 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (351)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:26:50 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (352)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:03 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:03 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:03 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:03 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:03 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/7377c9e81b2f830c37d7485712c884b5.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (179)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:03 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/thumbs/7377c9e81b2f830c37d7485712c884b5.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (180)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:03 [info] [application] removed files
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (187)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:03 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (197)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:08 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:08 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:08 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:08 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:08 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/eeceb93de6c6ea35df2c15957f1444d4.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (179)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:08 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/thumbs/eeceb93de6c6ea35df2c15957f1444d4.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (180)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:08 [info] [application] removed files
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (187)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:27:08 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (197)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:16 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (224)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:16 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (225)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:17 [info] [application] Path value is /Users/niko/Documents/yii_project/restaurant/images/tmp/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (224)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:17 [info] [application] thumbsPath value is /Users/niko/Documents/yii_project/restaurant/images/tmp/thumbs/
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (225)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:20 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (349)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:20 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (350)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:20 [info] [application] addphotototype is menu
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (349)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:20 [info] [application] addphototoid is 1
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (350)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:22 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:22 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:22 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:22 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:22 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/092d48460d25549dbf36cd3ae967f4fe.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (177)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:22 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/thumbs/092d48460d25549dbf36cd3ae967f4fe.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (178)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:22 [info] [application] removed files
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (185)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:22 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (195)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:28 [info] [application] in remove photo
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (152)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:28 [info] [application] delete
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (156)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:28 [info] [application] 
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (162)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:28 [info] [application] deleting photosmenu record
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (166)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:28 [info] [application] photoFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/1c3b6502d9894ab613b464be09bb376e.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (177)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:28 [info] [application] thumbsFile: /Users/niko/Documents/yii_project/restaurant/protected/../images/menus/1/thumbs/1c3b6502d9894ab613b464be09bb376e.jpg
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (178)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:28 [info] [application] removed files
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (185)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)
+2013/01/11 19:28:28 [info] [application] done
+in /Users/niko/Documents/yii_project/restaurant/protected/controllers/PhotoController.php (195)
+in /Users/niko/Documents/yii_project/restaurant/index.php (27)

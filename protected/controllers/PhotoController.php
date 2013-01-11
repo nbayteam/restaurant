@@ -36,7 +36,7 @@ class PhotoController extends Controller
                 'users'=>array('*'),
          ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update','uploadPhotos', 'postPhotos'),
+                'actions'=>array('create','update','uploadPhotos', 'postPhotos', 'removePhoto'),
                 'users'=>array('@'),
          ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -147,6 +147,49 @@ class PhotoController extends Controller
      ));
     }
 
+    public function actionRemovePhoto()
+    {
+        if(isset($_POST["_method"])) {
+            if($_POST["_method"] == "delete") {
+                $removePhotoFrom = $_POST['removePhotoFrom'];
+                $photoId = $_POST['photoId'];
+
+                $photoRecord = $this->loadModel($photoId);
+                $photoFile = $photoRecord->picture;
+
+                if ($removePhotoFrom === 'menu') {
+                    $success = false;
+
+                    // remove related field in tbl_photos_menu
+                    $photosMenus = $photoRecord->photosMenus;
+                    foreach ($photosMenus as $photosMenu) {
+                        // remove image files
+                        $origFile = Yii::app()->getBasePath() . "/../images/menus/{$photosMenu->menu->id}/{$photoFile}";
+                        $thumbsFile = Yii::app()->getBasePath() . "/../images/menus/{$photosMenu->menu->id}/thumbs/{$photoFile}";
+
+                        if (is_file($origFile) && is_file($thumbsFile)) {
+                            unlink($origFile);
+                            unlink($thumbsFile);
+                            $photosMenu->delete();
+                            $success = true;
+                        }
+                    }
+
+                    if ($success) {
+                        // remove photo record
+                        $photoRecord->delete();
+                    }
+                }
+
+                echo json_encode(array(
+                    'response'=>'OK',
+                    'photoId'=>$photoId,
+                ));
+
+            }
+        }
+    }
+
     /**
     * Creates a new model.
     * If creation is successful, the browser will display the models.
@@ -181,10 +224,10 @@ class PhotoController extends Controller
         } else {
             $this->init();
             $model = new Photo;   //Here we instantiate our model
- 
+
             //We get the uploaded instance
             $model->file = CUploadedFile::getInstance($model, 'file');
-            
+
             if($model->file !== null) {
                 $model->mime_type = $model->file->getType();
                 $model->size = $model->file->getSize();
@@ -197,7 +240,7 @@ class PhotoController extends Controller
                 //Initialize the addditional Fields, note that we retrieve the
                 //fields as if they were in a normal $_POST array
                 $model->description  = Yii::app()->request->getPost('description', '');
- 
+
 
                 if($model->validate()) {
 
@@ -243,7 +286,7 @@ class PhotoController extends Controller
                         'description' => $model->description,
                    );
                     Yii::app()->user->setState('images', $userImages);
- 
+
                     //Now we return our json
                     echo json_encode(array(array(
                             "name" => $model->name,
@@ -288,7 +331,7 @@ class PhotoController extends Controller
                         $addPhotosToId = $addPhotosTo[1];
                         Yii::log('addphotototype is ' . $addPhotosToType);
                         Yii::log('addphototoid is ' . $addPhotosToId);
-                        
+
                         if ($addPhotosToType == 'menu') {
                             $photoMenu = new PhotosMenu;
                             $photoMenu->photo_id = $photo->id;

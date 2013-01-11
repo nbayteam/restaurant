@@ -58,7 +58,7 @@ class MenuController extends Controller
 	{
         $photos = new Photo;
 
-        //Clear the user's session
+        // Clear the user's session
         Yii::app( )->user->setState( 'images', null );
         Yii::app( )->user->setState( 'addPhotosTo', null );
 

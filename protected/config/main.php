@@ -43,7 +43,7 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 			'generatorPaths'=>array(
-				'bootstrap.gii',
+				'bootstrap.gii.bootstrap',
 			),
 		),
 
@@ -125,5 +125,6 @@ return array(
 		'adminEmail' =>'webmaster@example.com',
         'divider' => '::',
         'imagePath' => 'images/uploads/',
+        'menuImageRoot' => 'images/menus/',
 	),
 );

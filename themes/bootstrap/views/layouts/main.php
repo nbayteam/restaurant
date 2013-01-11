@@ -15,15 +15,19 @@
    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
    <![endif]-->
 
+
    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
    <?php Yii::app()->bootstrap->registerCoreCss(); ?>
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/css/bootstrap-modal.css" />
+
    <?php Yii::app()->bootstrap->registerCoreScripts(); ?>
 
-   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/css/bootstrap-modal.css" />
+
    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/js/bootstrap-modal.js"></script>
    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/extra_library/bootstrap-modal-master/js/bootstrap-modalmanager.js"></script>
+
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -58,13 +62,15 @@
 
 	<div class="clear"></div>
 	<hr>
-	<div id="footer">
+	<footer>
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
+	</footer>
 
 </div><!-- page -->
+
+
 
 </body>
 </html>

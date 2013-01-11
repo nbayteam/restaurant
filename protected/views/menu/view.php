@@ -37,6 +37,7 @@ $this->menu=array(
 )); ?>
 
 
+<div class="row">
 <?php
 $this->widget('bootstrap.widgets.TbButton', array(
     'label'=>'Add Photos',
@@ -54,6 +55,54 @@ $this->widget('bootstrap.widgets.TbButton', array(
     // Declare Post Photo URL
     $menuUrl = Yii::app()->createUrl("photo/postPhotos", array("bid"=>$model->business_id));
 ?>
+</div>
+
+<br>
+
+<ul class="thumbnails">
+    <?php foreach ($model->photosMenus as $photoMenu): ?>
+    <?php $photoRecord = $photoMenu->photo ?>
+    <li class="span4" id='photomenu_<?php echo $photoRecord->id ?>'>
+        <div class="well">
+            <a href="#" class="thumbnail" rel="tooltip" data-title="<?php echo $photoRecord->description ?>">
+                <?php echo CHtml::image(Yii::app()->params['menuImageRoot'].$model->id.'/thumbs/'.$photoRecord->picture, $photoRecord->description, array()); ?>
+            </a>
+            <p><?php echo $photoRecord->description ?></p>
+            <div class='row'>
+                <?php
+                $this->widget('bootstrap.widgets.TbButton', array(
+                    'buttonType'=>'ajaxButton',
+                    'label'=>'Remove',
+                    'type'=>'danger',
+                    'size'=>'small',
+                    'htmlOptions'=>array(
+                        'class'=>'pull-right',
+                    ),
+                    'url' => Yii::app()->createUrl("photo/removePhoto"),
+                    'ajaxOptions'=>array(
+                        'type' => 'post',
+                        //'url' => Yii::app()->createUrl("photo/removePhoto"),
+                        'dataType'=>'json',
+                        'data' =>array(
+                            '_method'=>'delete',
+                            'removePhotoFrom'=>'menu',
+                            'photoId'=>$photoRecord->id
+                            ),
+                        'success' => 'js:function(data,textStatus,jqXHR ) {
+                                            if (data.response === "OK") {
+                                                $("#photomenu_"+data.photoId).remove();
+                                            }
+
+                                        }',
+                    ),
+                ));
+                ?>
+            </div>
+        </div>
+    </li>
+    <?php endforeach ?>
+
+</ul>
 
 <script>
     // Declare Post Photo URL
@@ -116,14 +165,14 @@ $this->beginWidget('bootstrap.widgets.TbModal',
                             $("#post").addClass("disabled");
                             $("#post").attr("href", "#");
                         }
-                        
+
                     }',
                     'completed'=>'js:function(event, files, index, xhr, handler) {
                         photoCounter++;
                         if(photoCounter > 0) {
                             $("#post").removeClass("disabled");
                             $("#post").attr("href", menuUrl);
-                        }                
+                        }
                     }',
                 ),
             ));
@@ -145,9 +194,8 @@ $this->beginWidget('bootstrap.widgets.TbModal',
     )); ?>
     <?php $this->widget('bootstrap.widgets.TbButton', array(
         'label'=>'Cancel',
-        'url'=>Yii::app()->createUrl("menu/view", array("id"=>$model->id)),
         'htmlOptions'=>array(
-            
+            "data-dismiss"=>"modal",
         ),
     )); ?>
 </div>
